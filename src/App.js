@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import style from './App.module.css'
 import Header from "./components/header/Header";
 import {BrowserRouter, Route, Redirect} from "react-router-dom";
 import Horoscope from "./components/horoscope/Horoscope";
@@ -10,8 +10,7 @@ import LinesOfFate from "./components/linesOfFate/LinesOfFate";
 function App() {
   return (
       <BrowserRouter>
-    <div className="App">
-      <header className="App-header">
+    <div className={style.appContainer}>
           <Header/>
           <div>
               <Route exact path={'/'} render={() => <Redirect to={'/hyromancer'}/>}/>
@@ -20,7 +19,6 @@ function App() {
               <Route exact path={'/portal'} render={() => <Portal/>} />
               <Route exact path={'/fate'} render={() => <LinesOfFate/>} />
           </div>
-      </header>
     </div>
       </BrowserRouter>
   );
