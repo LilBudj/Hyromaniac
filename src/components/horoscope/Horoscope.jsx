@@ -1,5 +1,5 @@
 import React from "react";
-import style from "Horoscope.module.css"
+import style from "./Horoscope.module.css"
 
 const Horoscope = (props) => {
     return(
