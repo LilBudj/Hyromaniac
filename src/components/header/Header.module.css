@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    width: 100vw;
+    height: 180px;
+    background-color: black
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
