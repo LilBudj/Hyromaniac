@@ -14,11 +14,9 @@ const Horoscope = (props) => {
                 </div>
             </div>
             <div className={style.promises}>
-                <div className={style.promise}>
                         <Promise text={'gjdjoijroifoisfjsfdifjiosjfsoijf'}/>
                         <Promise text={'gjdjoijroifoisfjsfdifjiosjfsoijf'}/>
                         <Promise text={'gjdjoijroifoisfjsfdifjiosjfsoijf'}/>
-                </div>
             </div>
             <nav className={style.horoscopeNav}>
                 <NavElement navText={'Today'}/>
