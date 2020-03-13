@@ -4,7 +4,8 @@
     align-items: center;
     width: 100vw;
     height: 180px;
-    background-color: black
+    background-color: black;
+    filter: opacity(0.7);
 }
 
 .navbar{
