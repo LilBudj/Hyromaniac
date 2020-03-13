@@ -5,7 +5,12 @@ import {NavLink} from "react-router-dom";
 const NavButton = (props) => {
     return(
         <div className={style.main}>
-            <NavLink to={props.link}><button className={style.button}>{props.label}</button></NavLink>
+            <NavLink to={props.link}>
+                <div className={style.container}>
+                    <img src={props.label} alt={'label'} className={style.image}/>
+                    <span className={style.text}>{props.text}</span>
+                </div>
+            </NavLink>
         </div>
     )
 };

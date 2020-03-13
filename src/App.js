@@ -6,6 +6,8 @@ import Horoscope from "./components/horoscope/Horoscope";
 import Hyromancer from "./components/hyromancer/hyromancer";
 import Portal from "./components/portal/Portal";
 import LinesOfFate from "./components/linesOfFate/LinesOfFate";
+import HyromancerSecond from "./components/hyromancer/HyromancerSecond";
+import "antd/dist/antd.css"
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
               <Route exact path={'/'} render={() => <Redirect to={'/hyromancer'}/>}/>
               <Route exact path={'/horoscope'} render={() => <Horoscope/>}/>
               <Route exact path={'/hyromancer'} render={() => <Hyromancer/>}/>
+              <Route exact path={'/hyromancer/payment'} render={() => <HyromancerSecond/>}/>
               <Route exact path={'/portal'} render={() => <Portal/>} />
               <Route exact path={'/fate'} render={() => <LinesOfFate/>} />
           </div>

@@ -6,10 +6,10 @@ const Header = (props) => {
   return(
       <div className={style.header}>
           <nav className={style.navbar}>
-              <NavButton link={'/horoscope'} label={'test1'}/>
-              <NavButton link={'/hyromancer'} label={'test2'}/>
-              <NavButton link={'/portal'} label={'test3'}/>
-              <NavButton link={'/fate'} label={'test4'}/>
+              <NavButton link={'/horoscope'} text={'test1'}/>
+              <NavButton link={'/hyromancer'} text={'test2'}/>
+              <NavButton link={'/portal'} text={'test3'}/>
+              <NavButton link={'/fate'} text={'test4'}/>
           </nav>
       </div>
   )
