@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/horoscope/NavElement.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/horoscope/Promise.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584026569475</updated>
-      <workItem from="1584026576898" duration="16499000" />
+      <workItem from="1584026576898" duration="19960000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -119,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584083638779</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="horoscope page markup">
+      <created>1584090298272</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584090298272</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +146,7 @@
     <MESSAGE value="app architecture (routing)" />
     <MESSAGE value="app architecture (styles)" />
     <MESSAGE value="hyromancer page markup" />
-    <option name="LAST_COMMIT_MESSAGE" value="hyromancer page markup" />
+    <MESSAGE value="horoscope page markup" />
+    <option name="LAST_COMMIT_MESSAGE" value="horoscope page markup" />
   </component>
 </project>

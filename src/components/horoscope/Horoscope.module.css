@@ -1,6 +1,8 @@
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: calc(100vh - 180px);
 }
@@ -9,18 +11,43 @@
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-    height: 150px;
+    height: 50px;
     position: fixed;
     bottom: 0;
 }
 
+.prepromise{
+    display: flex;
+    justify-content: center;
+}
 .promises{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .promise{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.promiseText{
+    color: white;
+    width: 400px;
+}
+.sign{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: black;
+}
+.signName{
+    width: 70px;
+    margin-bottom: 25px;
+}
+.signText{
+    width: 200px;
+    color: white;
 }
 
 .navElement{
