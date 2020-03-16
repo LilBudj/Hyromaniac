@@ -55,3 +55,14 @@
 .startButton{
 
 }
+.content{
+    width: 40vw;
+    height: 100%;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+}
+.payButton{
+
+}

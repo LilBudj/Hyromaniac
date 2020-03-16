@@ -1,9 +1,11 @@
 import React from "react";
 import style from "./Portal.module.css"
+import {Fade} from "react-reveal";
 
 const Portal = (props) => {
   return(
       <div className={style.container}>
+          <Fade left>
           <div className={style.portal}>
               <Element name={'Chinese'}/>
               <Element name={'Indian'}/>
@@ -15,6 +17,7 @@ const Portal = (props) => {
               <Element name={'Indian'}/>
               <Element name={'Maya'}/>
           </div>
+          </Fade>
       </div>
   )
 };
