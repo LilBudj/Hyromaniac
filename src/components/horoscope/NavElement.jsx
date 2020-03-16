@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 const NavElement = (props) => {
     return(
         <div className={style.navElement}>
-            <NavLink to={'/horoscope'} className={style.navText} activeClassName={style.active}>
+            <NavLink to={props.link} className={style.navText} activeClassName={style.active}>
                 <span>{props.navText}</span>
             </NavLink>
         </div>

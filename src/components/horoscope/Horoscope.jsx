@@ -14,14 +14,14 @@ const Horoscope = (props) => {
                 </div>
             </div>
             <div className={style.promises}>
-                        <Promise text={'gjdjoijroifoisfjsfdifjiosjfsoijf'}/>
-                        <Promise text={'gjdjoijroifoisfjsfdifjiosjfsoijf'}/>
-                        <Promise text={'gjdjoijroifoisfjsfdifjiosjfsoijf'}/>
+                        <Promise text={props.firstPromise}/>
+                        <Promise text={props.secondPromise}/>
+                        <Promise text={props.thirdPromise}/>
             </div>
             <nav className={style.horoscopeNav}>
-                <NavElement navText={'Today'}/>
-                <NavElement navText={'Week'}/>
-                <NavElement navText={'Month'}/>
+                <NavElement link={'/horoscope/Today'} navText={'Today'}/>
+                <NavElement link={'/horoscope/Week'} navText={'Week'}/>
+                <NavElement link={'/horoscope/Month'} navText={'Month'}/>
             </nav>
         </div>
     )
