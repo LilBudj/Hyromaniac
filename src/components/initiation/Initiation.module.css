@@ -5,6 +5,13 @@
     width: 100vw;
     height: calc(100vh - 120px);
 }
+.contentImage{
+    position: absolute;
+    transform: scale(0.5, 0.5);
+    bottom: 60px;
+    right: 80px;
+}
+
 
 .initiateImgContainer{
     display: flex;
@@ -17,6 +24,8 @@
 .initMessage{
     margin: 50px;
     color: white;
+    height: 300px;
+    width: 500px;
 }
 .initForm{
     width: 30%;
