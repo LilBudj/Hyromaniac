@@ -23,24 +23,39 @@
 }
 .signText1{
     position: relative;
-    left: 200px
+    left: 200px;
+    width: 60px;
+    font-size: 12px;
+    color: #cccc00
 }
 .signText2{
     position: relative;
     left: 250px;
+    width: 60px;
+    font-size: 12px;
+    color: #ff5500
 }
 .signText3{
     position: relative;
-    left:150px
+    left:150px;
+    width: 60px;
+    font-size: 12px;
+    color: lime;
 }
 .signText4{
     position: relative;
     left: 200px;
     top: 100px;
+    width: 60px;
+    font-size: 12px;
+    color: cadetblue;
 }
 .signText5{
     position: relative;
     top: 200px;
+    width: 60px;
+    font-size: 12px;
+    color: #ff9933
 }
 .initMessage{
     margin: 50px;
