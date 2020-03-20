@@ -52,7 +52,7 @@ const BirthDatePicker = (props) => {
         <div className={style.container}>
             <Fade left>
             <div className={style.content}>
-                <h2>Выберите свою дату рождения</h2>
+                <h2 style={{marginTop: "40px"}}>Выберите свою дату рождения</h2>
                 <img src={zodiak} alt={'sign'} className={style.zodiak}/>
                 <DatePicker defaultValue={selectedDate}  onChange={handleDateChange}/>
             </div>

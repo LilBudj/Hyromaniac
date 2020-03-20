@@ -13,11 +13,14 @@ import Week from "./components/horoscope/Week";
 import Initiation from "./components/initiation/Initiation";
 import BirthDatePicker from "./components/initiation/DatePicker";
 import Payment from "./components/initiation/Payment";
+import PreHeader from "./components/header/PreHeader";
+
 
 function App() {
     return (
         <BrowserRouter>
             <div className={style.appContainer}>
+                <PreHeader/>
                 <Route exact path={'/success'} render={() => <Container/>}/>
                 <Route exact path={'/'} render={() => <Initiation/>}/>
                 <Route exact path={'/init'} render={() => <BirthDatePicker/>}/>
