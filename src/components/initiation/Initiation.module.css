@@ -8,7 +8,7 @@
 .contentImage{
     position: absolute;
     transform: scale(0.5, 0.5);
-    bottom: 60px;
+    bottom: 40px;
     right: 80px;
 }
 
@@ -21,6 +21,27 @@
 .initiateImg{
 
 }
+.signText1{
+    position: relative;
+    left: 200px
+}
+.signText2{
+    position: relative;
+    left: 250px;
+}
+.signText3{
+    position: relative;
+    left:150px
+}
+.signText4{
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+.signText5{
+    position: relative;
+    top: 200px;
+}
 .initMessage{
     margin: 50px;
     color: white;
@@ -32,4 +53,23 @@
     display: flex;
     color: white;
     justify-content: space-evenly;
+}
+
+.header{
+    margin-bottom: 80px
+}
+.list{
+    font-size: 28px;
+    list-style-image: url("../../assets/moon.svg");
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 160px;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%
 }

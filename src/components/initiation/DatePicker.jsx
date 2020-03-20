@@ -16,6 +16,7 @@ import taurus from "../../assets/outline_stroke_taurus.png"
 import virgo from "../../assets/outline_stroke_virgo.png"
 import {Button} from "@material-ui/core";
 import {Fade} from "react-reveal";
+import {NavLink} from "react-router-dom";
 
 const signAlgorithm = (day, month, setter) => {
     if ((month === 1 && day>=20) || (month===2 && day<=18)) setter(aquarius);
@@ -56,7 +57,7 @@ const BirthDatePicker = (props) => {
                 <DatePicker defaultValue={selectedDate}  onChange={handleDateChange}/>
             </div>
             <div>
-                <Button variant={'contained'} color={'primary'}>Start</Button>
+                <NavLink to={'/payment'}><Button variant={'contained'} color={'primary'}>Start</Button></NavLink>
             </div>
             </Fade>
         </div>
