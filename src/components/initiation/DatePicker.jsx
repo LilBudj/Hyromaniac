@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import style from '../hyromancer/hyromancer.module.css'
 import {DatePicker} from "antd";
 import moment from "moment";
@@ -17,6 +17,7 @@ import virgo from "../../assets/outline_stroke_virgo.png"
 import {Button} from "@material-ui/core";
 import {Fade} from "react-reveal";
 import {NavLink} from "react-router-dom";
+import {eventAPI} from "../../amplitude/API"
 
 const signAlgorithm = (day, month, setter) => {
     if ((month === 1 && day>=20) || (month===2 && day<=18)) setter(aquarius);
@@ -33,7 +34,19 @@ const signAlgorithm = (day, month, setter) => {
     else if (month===12 && day>=22 || month===1 && day<=19) setter(capricorn);
 };
 
+const clickEvent = () => {
+    eventAPI.clickEvent("second button clicked")
+};
+const dateEvent = () => {
+    eventAPI.clickEvent("date picked")
+};
+
 const BirthDatePicker = (props) => {
+
+    useEffect(() => {
+        eventAPI.mountEvent("second page loaded")
+    }, []);
+
     const [selectedDate, setSelectedDate] = React.useState(moment('2000-01-01', 'YYYY-MM-DD'));
     const [zodiak, setZodiak] = React.useState(aquarius);
 
@@ -54,10 +67,10 @@ const BirthDatePicker = (props) => {
             <div className={style.content}>
                 <h2 style={{marginTop: "40px"}}>Выберите свою дату рождения</h2>
                 <img src={zodiak} alt={'sign'} className={style.zodiak}/>
-                <DatePicker defaultValue={selectedDate}  onChange={handleDateChange}/>
+                <DatePicker defaultValue={selectedDate} onChange={handleDateChange} onBlur={dateEvent}/>
             </div>
             <div>
-                <NavLink to={'/payment'}><Button variant={'contained'} color={'primary'}>Start</Button></NavLink>
+                <NavLink to={'/payment'}><Button variant={'contained'} color={'primary'} onClick={clickEvent}>Start</Button></NavLink>
             </div>
             </Fade>
         </div>

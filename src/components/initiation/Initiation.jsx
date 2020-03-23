@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Fade} from "react-reveal"
 import "date-fns"
 import style from "./Initiation.module.css"
@@ -6,8 +6,17 @@ import initImage from "../../assets/invitation_image_mystic.png"
 import {Button, withStyles} from "@material-ui/core"
 import {NavLink} from "react-router-dom";
 import content from "../../assets/content_image.png"
+import {eventAPI} from "../../amplitude/API"
+
+const trackClick = () => {
+    eventAPI.clickEvent("first button clicked")
+};
 
 const Initiation = () => {
+
+    useEffect(() => {
+        eventAPI.mountEvent("init page loaded")
+    }, []);
 
     return (
         <div className={style.container}>
@@ -27,7 +36,7 @@ const Initiation = () => {
                 </div>
 
                 <div className={style.initForm}>
-                    <NavLink to={'/init'}><Button variant={'contained'} color={'primary'}>Get
+                    <NavLink to={'/init'}><Button variant={'contained'} color={'primary'} onClick={trackClick}>Get
                         started</Button></NavLink>
                 </div>
             </Fade>

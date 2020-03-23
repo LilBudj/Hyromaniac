@@ -1,10 +1,16 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import style from "./Initiation.module.css"
 import {Button} from "@material-ui/core";
 import {Fade} from "react-reveal";
 import CheckField from "./CheckField";
+import {eventAPI} from "../../amplitude/API";
 
 const Payment = () => {
+
+    useEffect(() => {
+        eventAPI.mountEvent("last page loaded")
+    }, []);
+
     const [checkStatus, setCheckStatus] = useState(0);
 
     return(

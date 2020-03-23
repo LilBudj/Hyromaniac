@@ -1,10 +1,12 @@
 import React from "react";
 import style from "./Preheader.module.css";
+import {NavLink} from "react-router-dom";
+import logo from "../../assets/45625425_l.jpg"
 
 const PreHeader = () => {
     return(
         <div className={style.preHeader}>
-            <img className={style.logo} alt={'logo'}/>
+            <NavLink to={'/'}><img className={style.logo} src={logo} alt={'logo'}/></NavLink>
         </div>
     )
 };
