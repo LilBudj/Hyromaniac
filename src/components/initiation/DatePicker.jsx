@@ -14,7 +14,7 @@ import saggitarius from "../../assets/outline_stroke_saggitarius.png"
 import scorpio from "../../assets/outline_stroke_scorpio.png"
 import taurus from "../../assets/outline_stroke_taurus.png"
 import virgo from "../../assets/outline_stroke_virgo.png"
-import {Button} from "@material-ui/core";
+import Button from "../Button/Button";
 import {Fade} from "react-reveal";
 import {NavLink} from "react-router-dom";
 import {eventAPI} from "../../amplitude/API"
@@ -70,7 +70,7 @@ const BirthDatePicker = (props) => {
                 <DatePicker defaultValue={selectedDate} onChange={handleDateChange} onBlur={dateEvent}/>
             </div>
             <div>
-                <NavLink to={'/payment'}><Button variant={'contained'} color={'primary'} onClick={clickEvent}>Start</Button></NavLink>
+                <NavLink to={'/payment'}><Button text={'Start'} onClick={clickEvent}/></NavLink>
             </div>
             </Fade>
         </div>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import style from "./Initiation.module.css"
-import {Button} from "@material-ui/core";
+import Button from "../Button/Button";
 import {Fade} from "react-reveal";
 import CheckField from "./CheckField";
 import {eventAPI} from "../../amplitude/API";
@@ -32,7 +32,7 @@ const Payment = () => {
                     </div>
                 </div>
             <div className={style.payment}>
-                <Button variant={'contained'} color={'primary'}>Продолжить</Button>
+                <a href={'https://play.google.com/store/apps/details?id=com.orionhoroscope.daily.horoscope'}><Button text={'Продолжить'}/></a>
             </div>
             </Fade>
         </div>

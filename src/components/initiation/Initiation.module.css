@@ -119,7 +119,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: -60px;
+        width: 100vw;
+        margin: -60px 0 0 0;
     }
     .greetings{
         width: 100px;
@@ -128,31 +129,56 @@
     .belowGreet{
         width: 300px;
         font-size: 18px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .contentImage{
         position: relative;
         transform: scale(0.3, 0.3);
         bottom: 360px;
-        left: 40px;
+        left: 10px;
     }
     .initiateImg{
         transform: scale(0.5, 0.5);
         margin-top: -100px;
     }
     .signText1{
-        left: -90px;
+        font-size: 10px;
+        left: -120px;
+        top: 20px;
     }
     .signText2{
-
+        font-size: 10px;
+        left: -20px;
+        top: 0;
     }
     .signText3{
-
+        font-size: 10px;
+        top: -30px;
+        left: 120px;
     }
     .signText4{
-
+        font-size: 10px;
+        top: 50px;
+        left: -10px;
     }
     .signText5{
-
+        font-size: 10px;
+        top: 80px;
+        left: 70px;
+    }
+    .initForm{
+        margin-top: 0
+    }
+    .list{
+        font-size: 18px;
+    }
+    li{
+        margin: 10px 0 10px 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .payment{
+        align-items: center;
     }
 }

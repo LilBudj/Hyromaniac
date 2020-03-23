@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Button/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/Button.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/amplitude/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/amplitude/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/PreHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/PreHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Preheader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Preheader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -32,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../01/react_1_test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,7 +87,7 @@
       <updated>1584026569475</updated>
       <workItem from="1584026576898" duration="23687000" />
       <workItem from="1584342542349" duration="4307000" />
-      <workItem from="1584355619232" duration="66743000" />
+      <workItem from="1584355619232" duration="75233000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -192,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584727401078</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="api implemented [2]">
+      <created>1584949830986</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1584949831047</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +236,7 @@
     <MESSAGE value="stylizing [2]" />
     <MESSAGE value="api implemented" />
     <MESSAGE value="api implemented [1]" />
-    <option name="LAST_COMMIT_MESSAGE" value="api implemented [1]" />
+    <MESSAGE value="api implemented [2]" />
+    <option name="LAST_COMMIT_MESSAGE" value="api implemented [2]" />
   </component>
 </project>

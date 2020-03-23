@@ -3,7 +3,7 @@ import {Fade} from "react-reveal"
 import "date-fns"
 import style from "./Initiation.module.css"
 import initImage from "../../assets/invitation_image_mystic.png"
-import {Button, withStyles} from "@material-ui/core"
+import Button from "../Button/Button"
 import {NavLink} from "react-router-dom";
 import content from "../../assets/content_image.png"
 import {eventAPI} from "../../amplitude/API"
@@ -36,8 +36,7 @@ const Initiation = () => {
                 </div>
 
                 <div className={style.initForm}>
-                    <NavLink to={'/init'}><Button variant={'contained'} color={'primary'} onClick={trackClick}>Get
-                        started</Button></NavLink>
+                    <NavLink to={'/init'}><Button text={'continue'} onClick={trackClick}/></NavLink>
                 </div>
             </Fade>
         </div>

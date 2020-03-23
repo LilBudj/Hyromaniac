@@ -1,0 +1,11 @@
+.nextButton{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: url("../../assets/Бэкграунд.jpg");
+    text-transform: uppercase;
+    box-shadow: 0 0 7px #fff;
+}
