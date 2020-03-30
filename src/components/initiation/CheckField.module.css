@@ -2,22 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: radial-gradient(transparent 30%, black);
-    width: 160px;
-    height: 30px;
-    border-radius: 5px;
+    background-image: url("../../assets/clickCore.png");
+    width: 170px;
+    height: 54px;
+    border-radius: 10px;
     -moz-box-shadow:0 0 10px #fff;
     -webkit-box-shadow:0 0 10px #fff;
 }
 .text{
+    width: 50px;
     margin-left: 10px;
     font-size: 12px;
 }
 .image{
     position: relative;
-    left: 5px;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #fff;
+    left: 10px;
+    width: 64px;
+    height: 64px;
 }

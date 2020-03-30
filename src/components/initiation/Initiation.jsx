@@ -5,7 +5,7 @@ import style from "./Initiation.module.css"
 import initImage from "../../assets/invitation_image_mystic.png"
 import Button from "../Button/Button"
 import {NavLink} from "react-router-dom";
-import content from "../../assets/content_image.png"
+import content from "../../assets/palmistry.png"
 import {eventAPI} from "../../amplitude/API"
 
 const trackClick = () => {
@@ -24,13 +24,8 @@ const Initiation = () => {
                 <div className={style.initiateImgContainer}>
                     <img src={initImage} className={style.initiateImg} alt={'init'}/>
                     <div className={style.initMessage}>
-                        <span className={style.greetings}>Greetings</span>
-                        <div className={style.belowGreet}>divination and palm reading</div>
-                        <div className={style.signText1}>ЕЖЕДНЕВНЫЙ ГОРОСКОП</div>
-                        <div className={style.signText2}>ЛЮБОВНЫЙ ГОРОСКОП</div>
-                        <div className={style.signText3}>КОНСУЛЬТАЦИИ АСТРОЛОГА</div>
-                        <div className={style.signText4}>ЛИЧНЫЙ ГОРОСКОП</div>
-                        <div className={style.signText5}>ПРЕДСКАЗАТЕЛЬ СУДЬБЫ</div>
+                        <span className={style.greetings}>Гороскоп</span>
+                        <div className={style.belowGreet}>Предсказания и гадание на руке онлайн</div>
                         <img className={style.contentImage} src={content} alt={'content'}/>
                     </div>
                 </div>

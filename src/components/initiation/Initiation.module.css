@@ -1,15 +1,14 @@
 .container{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     height: calc(100vh);
 }
 .contentImage{
-    position: absolute;
-    transform: scale(0.5, 0.5);
-    right: 80px;
-    bottom: -120px;
+    width: 35vw
 }
 .greetings{
     font-weight: 800;
@@ -27,54 +26,13 @@
 
 .initiateImgContainer{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
     justify-content: space-evenly;
     margin: 60px;
 }
 .initiateImg{
 
-}
-.signText1{
-    position: relative;
-    top: 50px;
-    width: 60px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #cccc00
-}
-.signText2{
-    position: relative;
-    left: 180px;
-    top: 40px;
-    width: 60px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #ff5500
-}
-.signText3{
-    position: relative;
-    left: 380px;
-    width: 60px;
-    font-size: 12px;
-    font-weight: 700;
-    color: lime;
-}
-.signText4{
-    position: relative;
-    left: 200px;
-    top: 110px;
-    width: 60px;
-    font-size: 12px;
-    font-weight: 700;
-    color: darkslateblue;
-}
-.signText5{
-    position: relative;
-    left: 280px;
-    top: 180px;
-    width: 60px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #ff9933
 }
 .initMessage{
     margin: 50px;
@@ -91,6 +49,7 @@
 }
 
 .header{
+    margin-top: 80px;
     margin-bottom: 80px
 }
 .list{
@@ -99,24 +58,35 @@
 }
 .payment{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 160px;
 }
 .content{
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
     justify-content: space-evenly;
     width: 70%
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+    .container{
+        justify-content: space-evenly;
+    }
     .initiateImgContainer{
+        width: 100vw;
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
     .initMessage{
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
@@ -126,45 +96,27 @@
         width: 100px;
         font-size: 20px;
     }
+    .header{
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: center;
+    }
+    .headText{
+        width: 80%;
+    }
     .belowGreet{
         width: 300px;
         font-size: 18px;
         margin-top: 20px;
     }
     .contentImage{
-        position: relative;
-        transform: scale(0.3, 0.3);
-        bottom: 360px;
-        left: 10px;
+        width: 80vw;
+        transform: scale(0.8, 0.8);
     }
     .initiateImg{
         transform: scale(0.5, 0.5);
         margin-top: -100px;
-    }
-    .signText1{
-        font-size: 10px;
-        left: -120px;
-        top: 20px;
-    }
-    .signText2{
-        font-size: 10px;
-        left: -20px;
-        top: 0;
-    }
-    .signText3{
-        font-size: 10px;
-        top: -30px;
-        left: 120px;
-    }
-    .signText4{
-        font-size: 10px;
-        top: 50px;
-        left: -10px;
-    }
-    .signText5{
-        font-size: 10px;
-        top: 80px;
-        left: 70px;
     }
     .initForm{
         margin-top: 0

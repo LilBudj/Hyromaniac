@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./CheckField.module.css"
-import check from "../../assets/check.svg"
+import check from "../../assets/element.png"
 
 const CheckField = (props) => {
 

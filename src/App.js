@@ -25,6 +25,7 @@ function App() {
                 <Route exact path={'/'} render={() => <Initiation/>}/>
                 <Route exact path={'/init'} render={() => <BirthDatePicker/>}/>
                 <Route exact path={'/payment'} render={() => <Payment/>}/>
+                <Route exact path={'/hyromancer'} render={() => <Hyromancer/>}/>
             </div>
         </BrowserRouter>
     );

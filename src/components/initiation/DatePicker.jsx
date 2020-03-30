@@ -66,11 +66,13 @@ const BirthDatePicker = (props) => {
             <Fade left>
             <div className={style.content}>
                 <h2 style={{marginTop: "40px"}}>Выберите свою дату рождения</h2>
+                <div className={style.datePicker}>
                 <img src={zodiak} alt={'sign'} className={style.zodiak}/>
                 <DatePicker defaultValue={selectedDate} onChange={handleDateChange} onBlur={dateEvent}/>
+                </div>
             </div>
-            <div>
-                <NavLink to={'/payment'}><Button text={'Start'} onClick={clickEvent}/></NavLink>
+            <div className={style.dateButton}>
+                <NavLink to={'/hyromancer'}><Button text={'Start'} onClick={clickEvent}/></NavLink>
             </div>
             </Fade>
         </div>

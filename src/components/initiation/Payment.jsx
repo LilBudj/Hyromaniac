@@ -17,7 +17,7 @@ const Payment = () => {
         <div className={style.container}>
             <Fade left>
             <div className={style.header}>
-                <h1>PREMIUM VERSION</h1>
+                <h1 className={style.headText}>Скачивайте наше приложение</h1>
             </div>
                 <div className={style.content}>
             <ul className={style.list}>
@@ -27,12 +27,12 @@ const Payment = () => {
                 <li>Сканнер ладони</li>
             </ul>
                     <div className={style.payment}>
-                    <CheckField text={'пробный период'} isActive={checkStatus === 1} setter={setCheckStatus} value={1}/>
-                    <CheckField text={'пробный период'} isActive={checkStatus === 2} setter={setCheckStatus} value={2}/>
+                    <CheckField text={'Пробный период'} isActive={checkStatus === 1} setter={setCheckStatus} value={1}/>
+                    <CheckField text={'Месячная подписка'} isActive={checkStatus === 2} setter={setCheckStatus} value={2}/>
                     </div>
                 </div>
             <div className={style.payment}>
-                <a href={'https://play.google.com/store/apps/details?id=com.orionhoroscope.daily.horoscope'}><Button text={'Продолжить'}/></a>
+                <a href={'https://play.google.com/store/apps/details?id=com.orionhoroscope.daily.horoscope'}><Button text={'Перейти к приложению'}/></a>
             </div>
             </Fade>
         </div>

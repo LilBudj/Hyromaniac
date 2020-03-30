@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const instance = axios.create({
-    baseURL: 'https://example.com' //https://api.amplitude.com/2/httpapi
+    baseURL: 'https://api.amplitude.com/2/httpapi'
 });
 const APIKey = '29a7f14698a3dc6e0d2ee5ef3992f72c';
 
