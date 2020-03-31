@@ -1,8 +1,10 @@
 .container{
-    display: flex;
     display: -webkit-flex;
     display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
     align-items: center;
     width: 100vw;
     height: calc(100vh);
@@ -25,9 +27,10 @@
 
 
 .initiateImgContainer{
-    display: flex;
     display: -webkit-flex;
     display: -moz-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
     justify-content: space-evenly;
     margin: 60px;
 }
@@ -42,9 +45,12 @@
 }
 .initForm{
     width: 30%;
+    display: -webkit-flex;
+    display: -moz-flex;
     display: flex;
     color: white;
     margin-top: 60px;
+    -webkit-justify-content: space-around;
     justify-content: space-evenly;
 }
 
@@ -57,17 +63,20 @@
     list-style-image: url("../../assets/moon.svg");
 }
 .payment{
-    display: flex;
     display: -webkit-flex;
     display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-around;
     justify-content: space-evenly;
     height: 160px;
 }
 .content{
-    display: flex;
     display: -webkit-flex;
     display: -moz-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
     justify-content: space-evenly;
     width: 70%
 }
@@ -75,18 +84,21 @@
 
 @media screen and (max-width: 800px){
     .container{
+        -webkit-justify-content: space-around;
         justify-content: space-evenly;
     }
     .initiateImgContainer{
         width: 100vw;
+        -webkit-flex-direction: column;
         flex-direction: column;
+        -webkit-align-items: center;
         align-items: center;
         margin: 0;
     }
     .initMessage{
-        display: flex;
         display: -webkit-flex;
         display: -moz-flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
@@ -97,9 +109,10 @@
         font-size: 20px;
     }
     .header{
-        display: flex;
         display: -webkit-flex;
         display: -moz-flex;
+        display: flex;
+        -webkit-justify-content: center;
         justify-content: center;
     }
     .headText{
@@ -128,9 +141,12 @@
         margin: 10px 0 10px 0;
     }
     .content{
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
     .payment{
+        -webkit-align-items: center;
         align-items: center;
+        height: 20vh;
     }
 }
