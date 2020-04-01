@@ -71,6 +71,7 @@
     -webkit-justify-content: space-around;
     justify-content: space-evenly;
     height: 160px;
+    font-size: 14px;
 }
 .content{
     display: -webkit-flex;

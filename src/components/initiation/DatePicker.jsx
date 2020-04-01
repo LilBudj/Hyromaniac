@@ -62,10 +62,10 @@ const BirthDatePicker = (props) => {
     };
 
     return(
-        <div className={style.container}>
+        <div className={"d-flex flex-column justify-content-around align-items-center align-self-center h-100"}>
             <Fade left>
             <div className={style.content}>
-                <h2 style={{marginTop: "40px"}}>Выберите свою дату рождения</h2>
+                <h2 className={style.headLine}>Выберите свою дату рождения</h2>
                 <div className={style.datePicker}>
                 <img src={zodiak} alt={'sign'} className={style.zodiak}/>
                 <DatePicker defaultValue={selectedDate} onChange={handleDateChange} onBlur={dateEvent}/>

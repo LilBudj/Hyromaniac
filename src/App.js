@@ -7,6 +7,7 @@ import Portal from "./components/portal/Portal";
 import LinesOfFate from "./components/linesOfFate/LinesOfFate";
 import HyromancerSecond from "./components/initiation/DatePicker";
 import "antd/dist/antd.dark.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import Today from "./components/horoscope/Today";
 import Month from "./components/horoscope/Month";
 import Week from "./components/horoscope/Week";

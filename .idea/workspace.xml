@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +97,7 @@
       <workItem from="1585239905070" duration="17363000" />
       <workItem from="1585319391467" duration="1406000" />
       <workItem from="1585380507847" duration="6033000" />
-      <workItem from="1585586757152" duration="9487000" />
+      <workItem from="1585586757152" duration="21831000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -212,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585587074574</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="cross-browser markup[2]">
+      <created>1585662832192</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585662832193</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +262,7 @@
     <MESSAGE value="api implemented [1]" />
     <MESSAGE value="api implemented [2]" />
     <MESSAGE value="cross-browser markup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cross-browser markup" />
+    <MESSAGE value="cross-browser markup[2]" />
+    <option name="LAST_COMMIT_MESSAGE" value="cross-browser markup[2]" />
   </component>
 </project>

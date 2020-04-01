@@ -14,7 +14,7 @@ const Payment = () => {
     const [checkStatus, setCheckStatus] = useState(0);
 
     return(
-        <div className={style.container}>
+        <div className={"d-flex flex-column justify-content-sm-around align-items-center h-100 w-100"}>
             <Fade left>
             <div className={style.header}>
                 <h1 className={style.headText}>Скачивайте наше приложение</h1>

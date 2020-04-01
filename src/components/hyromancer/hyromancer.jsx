@@ -1,15 +1,15 @@
 import React from "react";
-import style from "./hyromancer.module.css"
+import style from "./hyromancer.module.css";
 import {NavLink} from "react-router-dom";
 import {Fade} from "react-reveal";
-import chiromancer from "../../assets/chyromancer.png"
-import toDo from "../../assets/todoImg.png"
-import sun from "../../assets/солнышко.png"
-import palm from "../../assets/рука.png"
+import chiromancer from "../../assets/chyromancer.png";
+import toDo from "../../assets/todoImg.png";
+import sun from "../../assets/солнышко.png";
+import palm from "../../assets/рука.png";
 
 const Hyromancer = () => {
     return(
-        <div className={style.container}>
+        <div className={"d-flex flex-column justify-content-around align-items-center align-self-center w-80 h-100"}>
             <Fade left>
             <div className={style.themeHeader}>
                 <img src={chiromancer} className={style.hyromancer}>
@@ -45,7 +45,9 @@ const Hyromancer = () => {
                     </div>
                 </div>
             </div>
+                <div>
                 <NavLink to={'/payment'}><button className={style.unique}>Начать Сеанс</button></NavLink>
+                </div>
             </Fade>
         </div>
     )
