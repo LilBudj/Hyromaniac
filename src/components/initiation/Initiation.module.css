@@ -35,7 +35,7 @@
     margin: 60px;
 }
 .initiateImg{
-
+    transform: scale(0.7, 0.7);
 }
 .initMessage{
     margin: 50px;
@@ -60,6 +60,7 @@
 }
 .list{
     font-size: 28px;
+    color: white;
     list-style-image: url("../../assets/moon.svg");
 }
 .payment{

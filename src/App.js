@@ -21,12 +21,15 @@ function App() {
     return (
         <BrowserRouter>
             <div className={style.appContainer}>
-                <PreHeader/>
+                {/*<PreHeader/>*/}
                 <Route exact path={'/success'} render={() => <Container/>}/>
                 <Route exact path={'/'} render={() => <Initiation/>}/>
                 <Route exact path={'/init'} render={() => <BirthDatePicker/>}/>
                 <Route exact path={'/payment'} render={() => <Payment/>}/>
                 <Route exact path={'/hyromancer'} render={() => <Hyromancer/>}/>
+                <Route exact path={'/horoscope/Today'} render={() => <Today/>}/>
+                <Route exact path={'/horoscope/Week'} render={() => <Week/>}/>
+                <Route exact path={'/horoscope/Month'} render={() => <Month/>}/>
             </div>
         </BrowserRouter>
     );
@@ -38,9 +41,9 @@ const Container = () => {
             <Header/>
             <div>
                 <Route path={'/horoscope'} render={() => <Today/>}/>
-                <Route path={'/horoscope/Today'} render={() => <Today/>}/>
-                <Route path={'/horoscope/Week'} render={() => <Week/>}/>
-                <Route path={'/horoscope/Month'} render={() => <Month/>}/>
+                <Route exact path={'/horoscope/Today'} render={() => <Today/>}/>
+                <Route exact path={'/horoscope/Week'} render={() => <Week/>}/>
+                <Route exact path={'/horoscope/Month'} render={() => <Month/>}/>
                 <Route path={'/hyromancer'} render={() => <Hyromancer/>}/>
                 <Route path={'/hyromancer/payment'} render={() => <HyromancerSecond/>}/>
                 <Route path={'/portal'} render={() => <Portal/>}/>

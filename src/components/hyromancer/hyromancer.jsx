@@ -9,7 +9,7 @@ import palm from "../../assets/рука.png";
 
 const Hyromancer = () => {
     return(
-        <div className={"d-flex flex-column justify-content-around align-items-center align-self-center w-80 h-100"}>
+        <div className={"d-flex flex-column justify-content-around align-items-center align-self-center w-80 h-160"}>
             <Fade left>
             <div className={style.themeHeader}>
                 <img src={chiromancer} className={style.hyromancer}>

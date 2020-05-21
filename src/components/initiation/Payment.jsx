@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import {Fade} from "react-reveal";
 import CheckField from "./CheckField";
 import {eventAPI} from "../../amplitude/API";
+import {NavLink} from "react-router-dom";
 
 const Payment = () => {
 
@@ -27,12 +28,12 @@ const Payment = () => {
                 <li>Сканнер ладони</li>
             </ul>
                     <div className={style.payment}>
-                    <CheckField text={'Пробный период'} isActive={checkStatus === 1} setter={setCheckStatus} value={1}/>
-                    <CheckField text={'Месячная подписка'} isActive={checkStatus === 2} setter={setCheckStatus} value={2}/>
+                    <CheckField text={'Пробный период'} isActive={checkStatus === 0} setter={setCheckStatus} value={0}/>
+                    <CheckField text={'Месячная подписка'} isActive={checkStatus === 1} setter={setCheckStatus} value={1}/>
                     </div>
                 </div>
             <div className={style.payment}>
-                <a href={'https://play.google.com/store/apps/details?id=com.orionhoroscope.daily.horoscope'}><Button text={'Перейти к приложению'}/></a>
+                <NavLink to={'/horoscope/Today'}><Button text={'Перейти к приложению'}/></NavLink>
             </div>
             </Fade>
         </div>

@@ -13,7 +13,7 @@
     max-width: 80vw;
     -webkit-align-self: center;
     align-self: center;
-    height: calc(100vh);
+    height: 100vh
 }
 
 .themeHeader{
@@ -22,6 +22,7 @@
     display: flex;
     -webkit-justify-content: space-around;
     justify-content: space-evenly;
+    margin-top: 10vh;
 }
 
 .hyromancer{
@@ -95,6 +96,7 @@
     font-size: 18px;
     line-height: 1.1em;
     color: white;
+    margin-top: 5vh;
 }
 .unique:hover{
     transition: 0.7s;
@@ -112,6 +114,7 @@
     align-items: center;
     width: 40vw;
     height: 70%;
+    margin-top: 15vh;
 }
 .buttonContainer{
     display: -webkit-flex;
@@ -161,11 +164,10 @@
         padding: 0;
     }
     .warnMessage{
-        width: 65vw;
         font-size: 12px;
     }
     .warnImage{
-        transform: scale(0.9, 0.9);
+        transform: scale(1.2, 1);
     }
     .datePicker{
         display: -webkit-flex;

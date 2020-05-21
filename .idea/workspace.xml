@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/endpointAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/payButton/payButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/PreHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/PreHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Month.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Promise.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Promise.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Week.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Week.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/initiation/CheckField.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/CheckField.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" afterDir="false" />
     </list>
@@ -21,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backchiromancy" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,7 +109,11 @@
       <workItem from="1585239905070" duration="17363000" />
       <workItem from="1585319391467" duration="1406000" />
       <workItem from="1585380507847" duration="6033000" />
-      <workItem from="1585586757152" duration="21831000" />
+      <workItem from="1585586757152" duration="27168000" />
+      <workItem from="1589786449722" duration="10328000" />
+      <workItem from="1589872446198" duration="1216000" />
+      <workItem from="1589957978268" duration="32238000" />
+      <workItem from="1590068363943" duration="6034000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -225,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585662832193</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="bootstrap markup">
+      <created>1585749793201</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585749793223</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +286,7 @@
     <MESSAGE value="api implemented [2]" />
     <MESSAGE value="cross-browser markup" />
     <MESSAGE value="cross-browser markup[2]" />
-    <option name="LAST_COMMIT_MESSAGE" value="cross-browser markup[2]" />
+    <MESSAGE value="bootstrap markup" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrap markup" />
   </component>
 </project>

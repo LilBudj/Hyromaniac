@@ -4,9 +4,7 @@ import style from "./Horoscope.module.css"
 const Promise = (props) => {
     return(
         <div className={style.promise}>
-            <div className={style.sign}>
-                {props.sign}
-            </div>
+            <img src={props.img} style={props.style} alt={'sign'}/>
             <div className={style.signName}>
                 {props.name}
             </div>

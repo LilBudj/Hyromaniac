@@ -29,9 +29,8 @@ const Initiation = () => {
                         <img className={style.contentImage} src={content} alt={'content'}/>
                     </div>
                 </div>
-
                 <div className={style.initForm}>
-                    <NavLink to={'/init'}><Button text={'continue'} onClick={trackClick}/></NavLink>
+                    <NavLink to={'/init'}><Button text={'Продолжить'} onClick={trackClick}/></NavLink>
                 </div>
             </Fade>
         </div>
