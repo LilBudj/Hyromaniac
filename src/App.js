@@ -15,15 +15,15 @@ import Initiation from "./components/initiation/Initiation";
 import BirthDatePicker from "./components/initiation/DatePicker";
 import Payment from "./components/initiation/Payment";
 import PreHeader from "./components/header/PreHeader";
+import MainPage from "./mainPage/MainPage";
 
 
 function App() {
     return (
         <BrowserRouter>
             <div className={style.appContainer}>
-                {/*<PreHeader/>*/}
                 <Route exact path={'/success'} render={() => <Container/>}/>
-                <Route exact path={'/'} render={() => <Initiation/>}/>
+                <Route path={'/'} render={() => <MainPage/>}/>
                 <Route exact path={'/init'} render={() => <BirthDatePicker/>}/>
                 <Route exact path={'/payment'} render={() => <Payment/>}/>
                 <Route exact path={'/hyromancer'} render={() => <Hyromancer/>}/>

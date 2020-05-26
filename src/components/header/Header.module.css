@@ -3,14 +3,25 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 180px;
-    background-color: black;
-    filter: opacity(0.7);
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar{
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
+    width: 40%;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+}
+
+.link:hover{
+    color: magenta;
+    transition: 0.3s;
+    text-decoration: none;
 }
 

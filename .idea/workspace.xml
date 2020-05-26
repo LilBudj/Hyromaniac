@@ -2,27 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/endpointAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/payButton/payButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainPage/MainPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainPage/ZodiacSign.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/PreHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/PreHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Month.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Promise.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Promise.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/horoscope/Week.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Week.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/initiation/CheckField.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/CheckField.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/DatePicker.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Initiation.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initiation/Payment.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +108,9 @@
       <workItem from="1589786449722" duration="10328000" />
       <workItem from="1589872446198" duration="1216000" />
       <workItem from="1589957978268" duration="32238000" />
-      <workItem from="1590068363943" duration="6034000" />
+      <workItem from="1590068363943" duration="23372000" />
+      <workItem from="1590390357764" duration="12609000" />
+      <workItem from="1590476502825" duration="5233000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -248,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585749793223</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Horoscope Interface">
+      <created>1590087318723</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590087318724</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +291,7 @@
     <MESSAGE value="cross-browser markup" />
     <MESSAGE value="cross-browser markup[2]" />
     <MESSAGE value="bootstrap markup" />
-    <option name="LAST_COMMIT_MESSAGE" value="bootstrap markup" />
+    <MESSAGE value="Horoscope Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Horoscope Interface" />
   </component>
 </project>

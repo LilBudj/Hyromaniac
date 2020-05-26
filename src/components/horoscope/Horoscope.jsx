@@ -4,7 +4,6 @@ import style from "./Horoscope.module.css"
 import NavElement from "./NavElement";
 import Promise from "./Promise";
 import Cookies from "js-cookie"
-import Popup from 'reactjs-popup'
 import aquarius from "../../assets/outline_stroke_aquarius.png"
 import aries from "../../assets/outline_stroke_aries.png"
 import cancer from "../../assets/outline_stroke_cancer.png"
@@ -21,79 +20,81 @@ import common from "../../assets/support_common.png"
 import family from "../../assets/support_family.png"
 import health from "../../assets/support_health.png"
 import love from "../../assets/support_love.png"
+import preloader from '../../assets/Preloader.gif'
 
 let zodiacImg;
 let zodiacName;
 
-const singSwitch = () => {
-    switch (Cookies.get('zodiac')) {
-        case 'Aquarius': {
-            zodiacImg = aquarius;
-            zodiacName = 'Водолей';
-            break
-        }
-        case 'Aries': {
-            zodiacImg = aries;
-            zodiacName = 'Овен';
-            break
-        }
-        case 'Cancer': {
-            zodiacImg = cancer;
-            zodiacName = 'Рак';
-            break
-        }
-        case 'Capricorn': {
-            zodiacImg = capricorn;
-            zodiacName = 'Козерог';
-            break
-        }
-        case 'Gemini': {
-            zodiacImg = gemini;
-            zodiacName = 'Близнецы';
-            break
-        }
-        case 'Libra': {
-            zodiacImg = libra;
-            zodiacName = 'Весы';
-            break
-        }
-        case 'Lion': {
-            zodiacImg = lion;
-            zodiacName = 'Лев';
-            break
-        }
-        case 'Pisces': {
-            zodiacImg = pisces;
-            zodiacName = 'Рыбы';
-            break
-        }
-        case 'Sagittarius': {
-            zodiacImg = saggitarius;
-            zodiacName = 'Стрелец';
-            break
-        }
-        case 'Scorpio': {
-            zodiacImg = scorpio;
-            zodiacName = 'Скорпион';
-            break
-        }
-        case 'Taurus': {
-            zodiacImg = taurus;
-            zodiacName = 'Телец';
-            break
-        }
-        case 'Virgo': {
-            zodiacImg = virgo;
-            zodiacName = 'Дева';
-            break
-        }
-        default: {
-            console.log('cookie-error')
-        }
-    }
-};
-
 const Horoscope = (props) => {
+
+    const singSwitch = () => {
+        switch (props.zodiacSign) {
+            case 'Aquarius': {
+                zodiacImg = aquarius;
+                zodiacName = 'Водолей';
+                break
+            }
+            case 'Aries': {
+                zodiacImg = aries;
+                zodiacName = 'Овен';
+                break
+            }
+            case 'Cancer': {
+                zodiacImg = cancer;
+                zodiacName = 'Рак';
+                break
+            }
+            case 'Capricorn': {
+                zodiacImg = capricorn;
+                zodiacName = 'Козерог';
+                break
+            }
+            case 'Gemini': {
+                zodiacImg = gemini;
+                zodiacName = 'Близнецы';
+                break
+            }
+            case 'Libra': {
+                zodiacImg = libra;
+                zodiacName = 'Весы';
+                break
+            }
+            case 'Lion': {
+                zodiacImg = lion;
+                zodiacName = 'Лев';
+                break
+            }
+            case 'Pisces': {
+                zodiacImg = pisces;
+                zodiacName = 'Рыбы';
+                break
+            }
+            case 'Sagittarius': {
+                zodiacImg = saggitarius;
+                zodiacName = 'Стрелец';
+                break
+            }
+            case 'Scorpio': {
+                zodiacImg = scorpio;
+                zodiacName = 'Скорпион';
+                break
+            }
+            case 'Taurus': {
+                zodiacImg = taurus;
+                zodiacName = 'Телец';
+                break
+            }
+            case 'Virgo': {
+                zodiacImg = virgo;
+                zodiacName = 'Дева';
+                break
+            }
+            default: {
+                console.log('cookie-error')
+            }
+        }
+    };
+
     useEffect(singSwitch, []);
 
     let [isPopup, setPopup] = useState(false);
@@ -106,7 +107,7 @@ const Horoscope = (props) => {
     };
 
     return(
-        <>{ isPopup &&
+        <>{isPopup &&
             <div className={style.popup}>
                 <div className={style.innerPopup}>
                     <div className={style.popupText}>Выберите знак зодиака</div>
@@ -133,20 +134,25 @@ const Horoscope = (props) => {
                 <img className={style.sign} src={zodiacImg} alt={'sign'} onClick={() => {setPopup(true)}}/>
                 <div className={style.signText}>
                     <span>{zodiacName}</span>
-                    <span style={{fontSize: '14px', opacity: '0.7', marginTop: '20px'}}>Гороскоп на Май 21, 2020</span>
+                    <span style={{fontSize: '14px', opacity: '0.7', marginTop: '20px'}}>Гороскоп на Май 25, 2020</span>
                 </div>
             </div>
-            <div className={style.promises}>
-                        <Promise text={props.firstPromise} img={common} name={'Общее'} style={{width: '150px', height:'120px'}}/>
-                        <Promise text={props.secondPromise} img={family} name={'Семья'} style={{width: '150px', height:'130px'}}/>
-                        <Promise text={props.thirdPromise} img={health} name={'Здоровье'} style={{width: '130px', height:'140px'}}/>
-            </div>
+                {props.isLoading? <img style={{transform: 'scale(1.4, 1.4)'}} src={preloader} alt={'loader'}/> :
+                    <div className={style.promises}>
+                        <Promise text={props.firstPromise} img={common} name={'Общее'}
+                                 style={{width: '150px', height: '120px'}}/>
+                        <Promise text={props.secondPromise} img={family} name={'Семья'}
+                                 style={{width: '150px', height: '130px'}}/>
+                        <Promise text={props.thirdPromise} img={health} name={'Здоровье'}
+                                 style={{width: '130px', height: '140px'}}/>
+                    </div>
+                }
             </Fade>
-            <nav className={style.horoscopeNav}>
-                <NavElement link={'/horoscope/Today'} navText={'Today'}/>
-                <NavElement link={'/horoscope/Week'} navText={'Week'}/>
-                <NavElement link={'/horoscope/Month'} navText={'Month'}/>
-            </nav>
+            {/*<nav className={style.horoscopeNav}>*/}
+            {/*    <NavElement link={'/horoscope/Today'} navText={'Today'}/>*/}
+            {/*    <NavElement link={'/horoscope/Week'} navText={'Week'}/>*/}
+            {/*    <NavElement link={'/horoscope/Month'} navText={'Month'}/>*/}
+            {/*</nav>*/}
         </div>
             </>
     )

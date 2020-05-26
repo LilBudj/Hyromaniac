@@ -3,8 +3,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    background-color: rgb(45, 48, 55);
+    width: 80vw;
+    background-color: #ffffff;
     min-height: 150vh;
 }
 
@@ -27,21 +27,23 @@
 .promises{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .promise{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-right: 35px;
     margin-left: 35px;
     margin-bottom: 5vw;
+    width: 80%;
 }
 .promiseText{
-    color: white;
-    width: 35vw;
+    color: #7705a8;
+    width: 70%;
     min-width: 180px;
+    font-size: 18px;
 }
 .sign{
     width: 120px;
@@ -51,7 +53,8 @@
 }
 .signName{
     margin-bottom: 25px;
-    color: white;
+    color: #7705a8;
+    font-family: Marcellus, serif;
     font-size: 24px;
     font-weight: 700;
 }
@@ -60,7 +63,7 @@
     flex-direction: column;
     justify-content: center;
     width: 10vw;
-    color: white;
+    color: #7705a8;
     font-size: 20px;
 }
 
@@ -102,21 +105,9 @@
 .navText:hover{
     color: #bbbbbb
 }
-/*.navText:hover:after{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    width: 60%;*/
-/*    height: 6px;*/
-/*    bottom: -5px;*/
-/*    left: 8px;*/
-/*    background-color: white;*/
-/*}*/
-/*.active span:after{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    height: 8px;*/
-/*    bottom: -5px;*/
-/*    left: 4px;*/
-/*    background-color: white;*/
-/*}*/
+
+@media screen and (max-width: 600px){
+    .promise{
+        flex-direction: column;
+    }
+}

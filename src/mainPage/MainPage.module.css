@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160vh;
+    width: 80vw;
+    background-color: white;
+    font-family: 'Marcellus', serif;
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../assets/gp.png");
+    width: 80vw;
+}
+.signs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.button{
+    outline: none;
+    border: none;
+    background-color: magenta;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.belt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+}
+.content{
+
+}
+
+.zodiac{
+    display: flex;
+    width: 8.333vw;
+    height: 70px;
+}
+.zodiacButton{
+    width: 100%;
+    height: 100%;
+    background-color: #7705a8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttonText{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+.zodiacImg{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+.active{
+    background-color: magenta;
+}
+.zodiacButton:hover{
+    background-color: #cc22cc;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 540px){
+    .belt{
+        flex-wrap: wrap;
+    }
+    .zodiac{
+        width: 20vw;
+        height: 60px;
+    }
+}

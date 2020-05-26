@@ -6,9 +6,11 @@ import Cookies from "js-cookie";
 const Week = () => {
 
     const handleFetch = () => {
+        setIsLoading(true);
         horoscopeAPI.getWeeklyForecast(Cookies.get('zodiac'))
             .then(res => {
                 fetchForecasts(res.data);
+                setIsLoading(false);
             })
             .catch(err => console.log(err))
     };
@@ -16,10 +18,13 @@ const Week = () => {
     useEffect(handleFetch, []);
 
     let [forecasts, fetchForecasts] = useState(['...', '...', '...']);
-    return <Horoscope firstPromise={forecasts[0]}
-                      secondPromise={forecasts[1]}
-                      thirdPromise={forecasts[2]}
-                      handleFetch={handleFetch}/>
+    let [isLoading, setIsLoading] = useState(true);
+
+    return <><div/><Horoscope firstPromise={forecasts[0]}
+                              secondPromise={forecasts[1]}
+                              thirdPromise={forecasts[2]}
+                              handleFetch={handleFetch}
+                              isLoading={isLoading}/></>
 };
 
 export default Week
