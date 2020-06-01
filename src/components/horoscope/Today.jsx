@@ -4,18 +4,18 @@ import {horoscopeAPI} from "../../api/endpointAPI";
 import Cookies from 'js-cookie'
 import style from "../../mainPage/MainPage.module.css";
 import ZodiacSign from "../../mainPage/ZodiacSign";
-import Aries from "../../assets/aries.svg";
-import Taurus from "../../assets/taurus.svg";
-import Gemini from "../../assets/gemini.svg";
-import Cancer from "../../assets/cancer.svg";
-import Lion from "../../assets/lion.svg";
-import Virgo from "../../assets/virgo.svg";
-import Libra from "../../assets/libra.svg";
-import Scorpio from "../../assets/scorpio.svg";
-import Sagittarius from "../../assets/sagittarius.svg";
-import Capricorn from "../../assets/capricorn.svg";
-import Aquarius from "../../assets/aquarius.svg";
-import Pisces from "../../assets/pisces.svg";
+import Aries from "../../assets/aries.png";
+import Taurus from "../../assets/taurus.png";
+import Gemini from "../../assets/gemini.png";
+import Cancer from "../../assets/cancer.png";
+import Lion from "../../assets/lion.png";
+import Virgo from "../../assets/virgo.png";
+import Libra from "../../assets/libra.png";
+import Scorpio from "../../assets/scorpio.png";
+import Sagittarius from "../../assets/sagittarius.png";
+import Capricorn from "../../assets/capricorn.png";
+import Aquarius from "../../assets/aquarius.png";
+import Pisces from "../../assets/pisces.png";
 
 const Today = (props) => {
 

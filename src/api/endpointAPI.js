@@ -14,4 +14,8 @@ export const horoscopeAPI = {
     getMonthForecast(zodiac, month){
         return instance.get(`/month?zodiac=${zodiac}&month=${month}`)
     }
-};
+};export const palmistryAPI = {
+    getPalmistryData(){
+        return instance.get(`palmistry`)
+    }
+}

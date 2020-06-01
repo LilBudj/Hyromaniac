@@ -16,6 +16,7 @@ import Pisces from '../assets/pisces.svg';
 import Scorpio from '../assets/scorpio.svg';
 import Aquarius from '../assets/aquarius.svg';
 import Virgo from '../assets/virgo.svg';
+import Palmistry from "../components/palmistry/Palmistry";
 
 const MainPage = () => {
     return(
@@ -44,7 +45,7 @@ const MainPage = () => {
                 <Route exact path={'/virgo'} render={() => <Today zodiac={'Virgo'}/>}/>
                 <Route exact path={'/aquarius'} render={() => <Today zodiac={'Aquarius'}/>}/>
                 <Route exact path={'/'} render={() => <Today zodiac={'Aries'}/>}/>
-
+                <Route path={'/palmistry'} render={() => <Palmistry/>}/>
             </div>
         </div>
     )

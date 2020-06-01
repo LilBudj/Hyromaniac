@@ -16,6 +16,7 @@ import BirthDatePicker from "./components/initiation/DatePicker";
 import Payment from "./components/initiation/Payment";
 import PreHeader from "./components/header/PreHeader";
 import MainPage from "./mainPage/MainPage";
+import Palmistry from "./components/palmistry/Palmistry";
 
 
 function App() {
