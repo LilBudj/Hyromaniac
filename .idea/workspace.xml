@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/HandShape.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/InitionPalm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/PalmSIgn.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/chiroReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/palmistry/LinePalm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/palmistry/PalmistryContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/endpointAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/endpointAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/chiroReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/chiroReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -116,7 +112,9 @@
       <workItem from="1590494736539" duration="705000" />
       <workItem from="1590562106810" duration="9811000" />
       <workItem from="1590597109096" duration="24702000" />
-      <workItem from="1590990933573" duration="2838000" />
+      <workItem from="1590990933573" duration="15955000" />
+      <workItem from="1591080498188" duration="47218000" />
+      <workItem from="1591253611936" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590485051900</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="redux enabled">
+      <created>1590997005447</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590997005447</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +311,7 @@
     <MESSAGE value="bootstrap markup" />
     <MESSAGE value="Horoscope Interface" />
     <MESSAGE value="Interface reworked" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface reworked" />
+    <MESSAGE value="redux enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="redux enabled" />
   </component>
 </project>

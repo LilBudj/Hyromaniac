@@ -54,6 +54,9 @@
 .link{
     color: white;
 }
+.handImg{
+    transform: scale(0.7, 0.7);
+}
 .button{
     outline: none;
     border: none;
