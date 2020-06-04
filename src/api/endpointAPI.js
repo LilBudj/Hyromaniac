@@ -19,4 +19,4 @@ export const palmistryAPI = {
     getPalmistryData(){
         return instance.get(`palmistry`)
     }
-}
+};

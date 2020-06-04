@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/LinePalm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/palmistry/PalmistryContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/horoscope/ForecastContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/endpointAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/endpointAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/chiroReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/chiroReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/horoscopeReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/horoscopeReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -114,7 +104,7 @@
       <workItem from="1590597109096" duration="24702000" />
       <workItem from="1590990933573" duration="15955000" />
       <workItem from="1591080498188" duration="47218000" />
-      <workItem from="1591253611936" duration="645000" />
+      <workItem from="1591253611936" duration="5053000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -270,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590997005447</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="redux flow">
+      <created>1591255810644</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1591255810645</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +309,7 @@
     <MESSAGE value="Horoscope Interface" />
     <MESSAGE value="Interface reworked" />
     <MESSAGE value="redux enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="redux enabled" />
+    <MESSAGE value="redux flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="redux flow" />
   </component>
 </project>
