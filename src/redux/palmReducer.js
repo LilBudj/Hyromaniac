@@ -3,6 +3,8 @@ import {palmistryAPI} from "../api/endpointAPI";
 const FETCH_PALM_DATA = 'palm_reducer/FETCH_PALM_DATA';
 const SET_FINGER_LENGTH = 'palm_reducer/SET_FINGER_LENGTH';
 const SET_PALM_LENGTH = 'palm_reducer/SET_PALM_LENGTH';
+const ACTIVATE_FINGER = 'palm_reducer/ACTIVATE_FINGER';
+const ACTIVATE_PALM = 'palm_reducer/ACTIVATE_PALM';
 
 const initialState = {
     dataBundles: {
@@ -239,6 +241,10 @@ const initialState = {
     palmMeasures: {
         fingerLength: 60,
         palmLength: 60
+    },
+    sliderActivations: {
+        isFingerActive: false,
+        isPalmActive: false,
     },
     isLoading: true,
 };
@@ -549,6 +555,24 @@ export const palmReducer = (state = initialState, action) => {
                 }
             }
         }
+        case ACTIVATE_FINGER: {
+            return {
+                ...state,
+                sliderActivations: {
+                    ...state.sliderActivations,
+                    isFingerActive: !state.sliderActivations.isFingerActive
+                }
+            }
+        }
+        case ACTIVATE_PALM: {
+            return {
+                ...state,
+                sliderActivations: {
+                    ...state.sliderActivations,
+                    isPalmActive: !state.sliderActivations.isPalmActive
+                }
+            }
+        }
         default: {
             return state
         }
@@ -558,6 +582,8 @@ export const palmReducer = (state = initialState, action) => {
 const fetchDataAC = (data) => ({type: FETCH_PALM_DATA, data});
 export const setFingerLength = (length) => ({type: SET_FINGER_LENGTH, length});
 export const setPalmLength = (length) => ({type: SET_PALM_LENGTH, length});
+export const activateFinger = () => ({type: ACTIVATE_FINGER});
+export const activatePalm = () => ({type: ACTIVATE_PALM});
 
 export const fetchData = () => {
     return async (dispatch) => {

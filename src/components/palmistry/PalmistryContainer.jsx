@@ -1,6 +1,6 @@
 import React from "react";
 import Palmistry from "./Palmistry";
-import {fetchData} from "../../redux/chiroReducer";
+import {fetchData} from "../../redux/palmReducer";
 import {connect} from "react-redux";
 
 class PalmistryContainer extends React.Component{
@@ -15,9 +15,9 @@ class PalmistryContainer extends React.Component{
 }
 
 let mapStateToProps = (state) => ({
-    bundle: state.dataBundles,
-    isLoading: state.isLoading,
-    data: state.stringData
+    bundle: state.palmReducer.dataBundles,
+    isLoading: state.palmReducer.isLoading,
+    data: state.palmReducer.stringData
 });
 
 export default connect(mapStateToProps, {

@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/horoscope/ForecastContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/Portal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/endpointAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/endpointAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/ForecastContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/ForecastContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Horoscope.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/horoscope/Today.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/HandShape.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/HandShape.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/InitionPalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/InitionPalm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/LinePalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/LinePalm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/PalmistryContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/PalmistryContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/slider/Slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/chiroReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/palmReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/horoscopeReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/horoscopeReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +124,8 @@
       <workItem from="1590597109096" duration="24702000" />
       <workItem from="1590990933573" duration="15955000" />
       <workItem from="1591080498188" duration="47218000" />
-      <workItem from="1591253611936" duration="5053000" />
+      <workItem from="1591253611936" duration="27628000" />
+      <workItem from="1591469391869" duration="12231000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -267,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591255810645</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="horoscope redux">
+      <created>1591261272010</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1591261272010</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +338,7 @@
     <MESSAGE value="Interface reworked" />
     <MESSAGE value="redux enabled" />
     <MESSAGE value="redux flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="redux flow" />
+    <MESSAGE value="horoscope redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="horoscope redux" />
   </component>
 </project>

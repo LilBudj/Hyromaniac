@@ -18,21 +18,7 @@ import Aquarius from "../../assets/aquarius.png";
 import Pisces from "../../assets/pisces.png";
 
 const Today = (props) => {
-
-    const handleFetch = () => {
-        setIsLoading(true);
-        horoscopeAPI.getDailyForecast(props.zodiac)
-            .then(res => {
-                fetchForecasts(res.data);
-                setIsLoading(false);
-            })
-            .catch(err => console.log(err))
-    };
-
-    useEffect(handleFetch, []);
-
-    let [forecasts, fetchForecasts] = useState(['...', '...', '...']);
-    let [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {props.fetchHoroscope(props.zodiac)}, []);
 
     return <div className={"d-flex flex-column align-items-center"}>
         <div className={style.belt}>
@@ -49,11 +35,11 @@ const Today = (props) => {
             <ZodiacSign link={'/aquarius'} text={'Aquarius'} img={Aquarius}/>
             <ZodiacSign link={'/pisces'} text={'Pisces'} img={Pisces}/>
         </div>
-        <Horoscope firstPromise={forecasts[0]}
-                   secondPromise={forecasts[1]}
-                   thirdPromise={forecasts[2]}
-                   handleFetch={handleFetch}
-                   isLoading={isLoading}
+        <Horoscope firstPromise={props.forecasts[0]}
+                   secondPromise={props.forecasts[1]}
+                   thirdPromise={props.forecasts[2]}
+                   handleFetch={props.fetchHoroscope}
+                   isLoading={props.isLoading}
                    zodiacSign={props.zodiac}/>
     </div>
 };

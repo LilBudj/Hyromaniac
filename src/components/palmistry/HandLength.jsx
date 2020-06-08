@@ -5,26 +5,23 @@ import squareHand from "../../assets/img7.png";
 import longHand from "../../assets/img8.png";
 import Slider from "../utils/slider/Slider";
 import {connect} from "react-redux";
-import {setFingerLength, setPalmLength} from "../../redux/chiroReducer";
+import {activateFinger, activatePalm, setFingerLength, setPalmLength} from "../../redux/palmReducer";
 
 const HandLength = (props) => {
-    debugger
-    let [fingerSlider, toggleFingerSlider] = useState(false);
-    let [palmSlider, togglePalmSlider] = useState(false);
 
     return(
+        <>
+        {props.isFingerActive && <Slider min={'30'} max={'120'} range={'1'} value={props.fingerLength} toggler={props.activateFinger} onChange={(e) => props.setFingerLength(e.currentTarget.value)}/>}
         <div>
             <div style={{height: '100vh'}} className={style.content}>
 
                 <div style={{marginTop: '5vh'}} className={style.session}>
                     Длина руки
                 </div>
-                {fingerSlider && <Slider min={'30'} max={'120'} range={'5'} value={props.fingerLength} onChange={(e) => props.setFingerLength(e.currentTarget.value)}/>}
-                {palmSlider && <Slider min={'30'} max={'120'} range={'5'} value={props.palmLength} onChange={(e) => props.setPalmLength(e.currentTarget.value)}/>}
                 <div className={"d-flex justify-content-around align-items-center h-50 w-80"}>
-                    <img onClick={() => togglePalmSlider(!palmSlider)}
+                    <img onClick={props.activatePalm}
                         className={style.handImg} src={squareHand} alt={'hand'}/>
-                    <img onClick={() => toggleFingerSlider(!fingerSlider)}
+                    <img onClick={props.activateFinger}
                         className={style.handImg} src={longHand} alt={'hand'}/>
                 </div>
                 <div className={"d-flex flex-column justify-content-between align-items-center h-50"}>
@@ -38,15 +35,20 @@ const HandLength = (props) => {
                 <NavLink className={style.link} to={'/palmistry/length/average'}><button className={style.button}>Продолжить</button></NavLink>
             </div>
         </div>
+            </>
     )
 };
 
-const mapStateToProps = (state) => ({
-    fingerLength: state.palmMeasures.fingerLength,
-    palmLength: state.palmMeasures.palmLength
+let mapStateToProps = (state) => ({
+    isFingerActive: state.palmReducer.sliderActivations.isFingerActive,
+    isPalmActive: state.palmReducer.sliderActivations.isPalmActive,
+    fingerLength: state.palmReducer.palmMeasures.fingerLength,
+    palmLength: state.palmReducer.palmMeasures.palmLength
 });
 
 export default connect(mapStateToProps, {
+    activateFinger,
+    activatePalm,
     setFingerLength,
     setPalmLength
 })(HandLength)

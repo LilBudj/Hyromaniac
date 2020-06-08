@@ -5,11 +5,15 @@ import longHand from "../../assets/img6.png";
 import React from "react";
 
 const LinePalm = (props) => {
-    debugger
     return(
         <div className={style.content}>
             <div style={{marginBottom: '5vh', marginTop: '5vh'}} className={style.session}>
                 Форма руки
+            </div>
+            <div className={style.handSection}>
+                <NavLink to={props.firstLink}><img className={style.handImg} src={props.img1} alt={'hand'}/></NavLink>
+                <NavLink to={props.secondLink}><img className={style.handImg} src={props.img2} alt={'hand'}/></NavLink>
+                {!!props.img3 && <NavLink to={props.thirdLink}><img className={style.handImg} src={props.img3} alt={'hand'}/></NavLink>}
             </div>
             <div className={"d-flex flex-column justify-content-between align-items-center h-50"}>
                 <div className={style.text}>
@@ -21,11 +25,6 @@ const LinePalm = (props) => {
                 <div className={style.text}>
                     {Buffer.from(props.data.third, 'base64').toString()}
                 </div>
-            </div>
-            <div className={"d-flex justify-content-around align-items-center h-50 w-80"}>
-                <NavLink to={props.firstLink}><img className={style.handImg} src={props.img1} alt={'hand'}/></NavLink>
-                <NavLink to={props.secondLink}><img className={style.handImg} src={props.img2} alt={'hand'}/></NavLink>
-                {!!props.img3 && <NavLink to={props.thirdLink}><img className={style.handImg} src={props.img3} alt={'hand'}/></NavLink>}
             </div>
         </div>
     )

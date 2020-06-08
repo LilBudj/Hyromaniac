@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 160vh;
+    max-height: 180vh;
     width: 80vw;
     background-color: white;
     font-family: 'Marcellus', serif;
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:80%;
+    width: 80%;
 }
 .content{
 
@@ -84,9 +84,10 @@
 @media screen and (max-width: 540px){
     .belt{
         flex-wrap: wrap;
+        width: 100%;
     }
     .zodiac{
-        width: 20vw;
-        height: 60px;
+        width: 26.666vw;
+        height: 70px;
     }
 }

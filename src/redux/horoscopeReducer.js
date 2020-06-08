@@ -5,7 +5,8 @@ const SET_ZODIAC = 'horoscope_reducer/SET_ZODIAC';
 
 const initState = {
     dailyForecasts: ["", "", ""],
-    zodiac: "Aries"
+    zodiac: "Aries",
+    isLoading: true,
 };
 
 export const horoscopeReducer = (state = initState, action) => {
@@ -13,7 +14,8 @@ export const horoscopeReducer = (state = initState, action) => {
         case FETCH_HOROSCOPE_DATA: {
             return {
                 ...state,
-                dailyForecasts: action.forecasts
+                dailyForecasts: action.forecasts,
+                isLoading: false,
             }
         }
         case SET_ZODIAC: {

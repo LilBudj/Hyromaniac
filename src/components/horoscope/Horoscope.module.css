@@ -44,6 +44,7 @@
     width: 70%;
     min-width: 180px;
     font-size: 18px;
+    font-family: Merriweather, 'serif';
 }
 .sign{
     width: 120px;
@@ -54,7 +55,7 @@
 .signName{
     margin-bottom: 25px;
     color: #7705a8;
-    font-family: Marcellus, serif;
+    font-family: Merriweather, 'serif';
     font-size: 24px;
     font-weight: 700;
 }
@@ -65,6 +66,7 @@
     width: 10vw;
     color: #7705a8;
     font-size: 20px;
+    font-family: Merriweather, 'serif';
 }
 
 .popup{
@@ -107,7 +109,20 @@
 }
 
 @media screen and (max-width: 600px){
+    .container{
+        min-height: 180vh;
+    }
     .promise{
         flex-direction: column;
+    }
+    .promiseText{
+        font-size: 14px;
+        width: 100%;
+    }
+    .signText{
+        width: 30vw
+    }
+    .prepromise{
+        width: 80vw
     }
 }

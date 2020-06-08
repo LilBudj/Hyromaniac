@@ -4,9 +4,8 @@ import {NavLink} from "react-router-dom";
 import {Fade} from "react-reveal";
 
 const Flexipalm = (props) => {
-    debugger
     return(
-        <div className={"d-flex flex-column justify-content-around align-items-center"} style={{height: '90vh'}}>
+        <div className={"d-flex flex-column justify-content-around align-items-center"}>
             <Fade left>
                 <div>
                     {!!props.img ? <img src={props.img} className={style.handImg} alt={'o'}/>

@@ -3,7 +3,6 @@ import style from './App.module.css'
 import Header from "./components/header/Header";
 import {BrowserRouter, Route, Redirect} from "react-router-dom";
 import Hyromancer from "./components/hyromancer/hyromancer";
-import Portal from "./components/portal/Portal";
 import LinesOfFate from "./components/linesOfFate/LinesOfFate";
 import HyromancerSecond from "./components/initiation/DatePicker";
 import "antd/dist/antd.dark.css"
@@ -47,7 +46,6 @@ const Container = () => {
                 <Route exact path={'/horoscope/Month'} render={() => <Month/>}/>
                 <Route path={'/hyromancer'} render={() => <Hyromancer/>}/>
                 <Route path={'/hyromancer/payment'} render={() => <HyromancerSecond/>}/>
-                <Route path={'/portal'} render={() => <Portal/>}/>
                 <Route path={'/fate'} render={() => <LinesOfFate/>}/>
             </div>
         </>

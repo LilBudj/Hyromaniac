@@ -1,11 +1,28 @@
 .sliderContainer{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.sliderBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    font-family: Marcellus, 'serif';
+    width: 60%;
+    height: 300px;
+    z-index: 200000;
+}
+.toggler{
+    z-index: 22;
+}
+.value{
+    z-index: 22;
 }
 
 input[type=range] {

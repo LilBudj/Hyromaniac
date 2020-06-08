@@ -17,7 +17,7 @@ const InitPalm = (props) => {
                 <div className={style.session}>
                     ГИБКОСТЬ РУКИ
                 </div>
-                <div className={"d-flex justify-content-around align-items-center h-70 w-100"}>
+                <div className={style.underContainer}>
                 <img className={style.initHand} src={initHand} alt={'hand'}/>
                     <div className={"d-flex flex-column justify-content-between align-items-center"}>
                 <div className={style.text}>

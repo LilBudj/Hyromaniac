@@ -18,10 +18,14 @@ import Aquarius from '../assets/aquarius.svg';
 import Virgo from '../assets/virgo.svg';
 import Palmistry from "../components/palmistry/Palmistry";
 import PalmistryContainer from "../components/palmistry/PalmistryContainer";
+import ForecastContainer from "../components/horoscope/ForecastContainer";
+import {connect} from "react-redux";
+import {activateFinger, activatePalm, setFingerLength, setPalmLength} from "../redux/palmReducer";
+import Slider from "../components/utils/slider/Slider";
 
-const MainPage = () => {
+const MainPage = (props) => {
     return(
-        <div className={style.container}>
+        <div className={style.container} id={'main-page-container'}>
             <div className={style.background}>
                 <Header/>
                 <div className={style.signs}>
@@ -32,24 +36,37 @@ const MainPage = () => {
                     Get your future
                 </button>
             </div>
+            {props.isPalmActive && <Slider min={'30'} max={'120'} range={'1'} value={props.palmLength} toggler={props.activatePalm} onChange={(e) => props.setFingerLength(e.currentTarget.value)}/>}
             <div className={style.content}>
-                <Route exact path={'/sagittarius'} render={() => <Today zodiac={'Sagittarius'}/>}/>
-                <Route exact path={'/scorpio'} render={() => <Today zodiac={'Scorpio'}/>}/>
-                <Route exact path={'/capricorn'} render={() => <Today zodiac={'Capricorn'}/>}/>
-                <Route exact path={'/libra'} render={() => <Today zodiac={'Libra'}/>}/>
-                <Route exact path={'/lion'} render={() => <Today zodiac={'Lion'}/>}/>
-                <Route exact path={'/gemini'} render={() => <Today zodiac={'Gemini'}/>}/>
-                <Route exact path={'/pisces'} render={() => <Today zodiac={'Pisces'}/>}/>
-                <Route exact path={'/cancer'} render={() => <Today zodiac={'Cancer'}/>}/>
-                <Route exact path={'/aries'} render={() => <Today zodiac={'Aries'}/>}/>
-                <Route exact path={'/taurus'} render={() => <Today zodiac={'Taurus'}/>}/>
-                <Route exact path={'/virgo'} render={() => <Today zodiac={'Virgo'}/>}/>
-                <Route exact path={'/aquarius'} render={() => <Today zodiac={'Aquarius'}/>}/>
-                <Route exact path={'/'} render={() => <Today zodiac={'Aries'}/>}/>
+                <Route exact path={'/sagittarius'} render={() => <ForecastContainer zodiac={'Sagittarius'}/>}/>
+                <Route exact path={'/scorpio'} render={() => <ForecastContainer zodiac={'Scorpio'}/>}/>
+                <Route exact path={'/capricorn'} render={() => <ForecastContainer zodiac={'Capricorn'}/>}/>
+                <Route exact path={'/libra'} render={() => <ForecastContainer zodiac={'Libra'}/>}/>
+                <Route exact path={'/lion'} render={() => <ForecastContainer zodiac={'Lion'}/>}/>
+                <Route exact path={'/gemini'} render={() => <ForecastContainer zodiac={'Gemini'}/>}/>
+                <Route exact path={'/pisces'} render={() => <ForecastContainer zodiac={'Pisces'}/>}/>
+                <Route exact path={'/cancer'} render={() => <ForecastContainer zodiac={'Cancer'}/>}/>
+                <Route exact path={'/aries'} render={() => <ForecastContainer zodiac={'Aries'}/>}/>
+                <Route exact path={'/taurus'} render={() => <ForecastContainer zodiac={'Taurus'}/>}/>
+                <Route exact path={'/virgo'} render={() => <ForecastContainer zodiac={'Virgo'}/>}/>
+                <Route exact path={'/aquarius'} render={() => <ForecastContainer zodiac={'Aquarius'}/>}/>
+                <Route exact path={'/'} render={() => <ForecastContainer zodiac={'Aries'}/>}/>
                 <Route path={'/palmistry'} render={() => <PalmistryContainer/>}/>
             </div>
         </div>
     )
 };
 
-export default MainPage
+let mapStateToProps = (state) => ({
+    isFingerActive: state.palmReducer.sliderActivations.isFingerActive,
+    isPalmActive: state.palmReducer.sliderActivations.isPalmActive,
+    fingerLength: state.palmReducer.palmMeasures.fingerLength,
+    palmLength: state.palmReducer.palmMeasures.palmLength
+});
+
+export default connect(mapStateToProps, {
+    activateFinger,
+    activatePalm,
+    setFingerLength,
+    setPalmLength
+})(MainPage)
