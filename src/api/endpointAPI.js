@@ -20,3 +20,8 @@ export const palmistryAPI = {
         return instance.get(`palmistry`)
     }
 };
+export const compatibilityAPI = {
+    getCompatibilityForecast(zodiacFirst, zodiacSecond) {
+        return instance.get(`compatibility?zodiac_first=${zodiacFirst}&zodiac_second=${zodiacSecond}`)
+    }
+};
