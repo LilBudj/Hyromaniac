@@ -8,7 +8,9 @@ const initState = {
     UnionName: "",
     body: "",
     percentInLove: 50,
-    percentInMarried: 50
+    percentInMarried: 50,
+    overallPercent: 50,
+    isLoading: true
 };
 
 export const compatibilityReducer = (state = initState, action) => {
@@ -16,7 +18,9 @@ export const compatibilityReducer = (state = initState, action) => {
         case GET_COMPATIBILITY_FORECAST: {
             return {
                 ...state,
-                ...action.data
+                ...action.data,
+                overallPercent: Math.sqrt((action.data.percentInLove * action.data.percentInMarried)),
+                isLoading: false,
             }
         }
         case SET_SECOND_ZODIAC: {

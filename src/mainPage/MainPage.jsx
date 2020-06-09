@@ -22,6 +22,7 @@ import ForecastContainer from "../components/horoscope/ForecastContainer";
 import {connect} from "react-redux";
 import {activateFinger, activatePalm, setFingerLength, setPalmLength} from "../redux/palmReducer";
 import Slider from "../components/utils/slider/Slider";
+import CompatibilityContainer from "../components/compatibility/CompatibilityContainer";
 
 const MainPage = (props) => {
     return(
@@ -52,6 +53,7 @@ const MainPage = (props) => {
                 <Route exact path={'/aquarius'} render={() => <ForecastContainer zodiac={'Aquarius'}/>}/>
                 <Route exact path={'/'} render={() => <ForecastContainer zodiac={'Aries'}/>}/>
                 <Route path={'/palmistry'} render={() => <PalmistryContainer/>}/>
+                <Route path={'/compatibility'} render={() => <CompatibilityContainer/>}/>
             </div>
         </div>
     )

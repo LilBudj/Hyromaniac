@@ -9,6 +9,7 @@ const Header = (props) => {
           <nav className={style.navbar}>
               <NavLink to={'/'} className={style.link} activeClassName={style.active}>Horoscope</NavLink>
               <NavLink to={'/palmistry'} className={style.link} activeClassName={style.active}>Palmistry</NavLink>
+              <NavLink to={'/compatibility'} className={style.link} activeClassName={style.active}>Compatibility</NavLink>
           </nav>
       </div>
   )

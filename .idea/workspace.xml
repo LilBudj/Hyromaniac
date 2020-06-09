@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/compatibility/CompatibilityContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/compatibility/Modal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/endpointAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/endpointAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/linesOfFate/LinesOfFate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/linesOfFate/LinesOfFate.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/compatibility/Compatibility.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/compatibility/CompatibilityContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/CompatibilityContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,7 @@
       <workItem from="1590990933573" duration="15955000" />
       <workItem from="1591080498188" duration="47218000" />
       <workItem from="1591253611936" duration="27628000" />
-      <workItem from="1591469391869" duration="19278000" />
+      <workItem from="1591469391869" duration="29912000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -286,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591628358653</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="compatibility reducer">
+      <created>1591715109837</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1591715109837</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +313,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init commit" />
     <MESSAGE value="app architecture [1]" />
     <MESSAGE value="app architecture (routing)" />
     <MESSAGE value="app architecture (styles)" />
@@ -331,6 +337,7 @@
     <MESSAGE value="redux flow" />
     <MESSAGE value="horoscope redux" />
     <MESSAGE value="React Portal added" />
-    <option name="LAST_COMMIT_MESSAGE" value="React Portal added" />
+    <MESSAGE value="compatibility reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="compatibility reducer" />
   </component>
 </project>
