@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
-    height: 140vh;
+    height: 100vh;
 }
 .pageName{
     font-size: 28px;
@@ -13,16 +12,29 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%
+    width: 50%
 }
 .image{
     width: 140px;
     height: 140px;
+    border-radius: 70px;
 }
 .percent{
     color: #7705a8;
 }
-
+.unionName{
+    font-family: Merriweather, 'serif';
+    color: #7705a8;
+    font-size: 26px;
+    font-weight: 600;
+}
+.body{
+    text-align: center;
+    font-family: Merriweather, 'serif';
+    color: #7705a8;
+    font-size: 16px;
+    width: 80%
+}
 
 .modalOverlay{
     display: flex;
@@ -38,9 +50,41 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
+    width: 70%;
+    border-radius: 5px;
+    padding: 2%;
+}
+.popupText{
+    font-size: 24px;
+    color: #7705a8;
 }
 .zodiacs{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 90%
+    width: 90%;
+    margin: 10%;
+}
+.sign{
+    height: 120px;
+    width: 120px;
+}
+.button{
+    outline: none;
+    border: none;
+    background-color: magenta;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.image:hover{
+    transition: 0.4s;
+    box-shadow: 0 0 10px 4px #cc22cc;
 }

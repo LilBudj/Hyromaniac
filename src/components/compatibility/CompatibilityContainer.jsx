@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import Compatibility from "./Compatibility";
-import {getForecast, setSecondZodiac} from "../../redux/compatibilityReducer";
+import {getForecast, setModal, setSecondZodiac} from "../../redux/compatibilityReducer";
 
 class CompatibilityContainer extends React.Component{
 
@@ -26,10 +26,12 @@ let mapStateToProps = (state) => ({
     percent: state.compatibilityReducer.overallPercent,
     zodiacFirst: state.horoscopeReducer.zodiac,
     zodiacSecond: state.compatibilityReducer.matchZodiac,
+    isModal: state.compatibilityReducer.isModal,
     isLoading: state.compatibilityReducer.isLoading
 });
 
 export default connect(mapStateToProps, {
     getForecast,
-    setSecondZodiac
+    setSecondZodiac,
+    setModal
 })(CompatibilityContainer)

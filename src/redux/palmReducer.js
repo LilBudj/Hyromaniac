@@ -5,6 +5,8 @@ const SET_FINGER_LENGTH = 'palm_reducer/SET_FINGER_LENGTH';
 const SET_PALM_LENGTH = 'palm_reducer/SET_PALM_LENGTH';
 const ACTIVATE_FINGER = 'palm_reducer/ACTIVATE_FINGER';
 const ACTIVATE_PALM = 'palm_reducer/ACTIVATE_PALM';
+const SET_PALM_SHAPE = 'palm_reducer/SET_PALM_SHAPE';
+const CALCULATE_HAND_TYPE = 'palm_reducer/CALCULATE_HAND_TYPE';
 
 const initialState = {
     dataBundles: {
@@ -240,7 +242,8 @@ const initialState = {
     },
     palmMeasures: {
         fingerLength: 60,
-        palmLength: 60
+        palmLength: 60,
+        palmShape: 'square'
     },
     sliderActivations: {
         isFingerActive: false,
@@ -260,7 +263,12 @@ export const palmReducer = (state = initialState, action) => {
                 long_arm_first, long_arm_second,
                 palm_length, seek_bar_finger_unit,
                 finger_length, how_long_fingers_first,
+                short_fingers_first, short_fingers_second, short_fingers_third,
                 middle_description_first, middle_description_second,
+                long_fingers_description_first, long_fingers_description_second, long_fingers_description_third,
+                wind_arm_first, wind_arm_second, wind_arm_third,
+                water_arm_type_first, water_arm_type_second, water_arm_type_third, water_arm_type_fourth,
+                fire_arm_type_first, fire_arm_type_second, fire_arm_type_third, fire_arm_type_fourth,
                 earth_arm_type_first, earth_arm_type_second, earth_arm_type_third, earth_arm_type_fourth,
                 active_arm_first, active_arm_second, active_arm_third,
                 line_of_life_first, line_of_life_second, line_of_life_third,
@@ -573,6 +581,83 @@ export const palmReducer = (state = initialState, action) => {
                 }
             }
         }
+        case SET_PALM_SHAPE: {
+            return {
+                ...state,
+                palmMeasures: {
+                    ...state.palmMeasures,
+                    palmShape: action.palmShape
+                }
+            }
+        }
+        case CALCULATE_HAND_TYPE: {
+            if (action.length < 60){
+                if (action.form === 'square') return {
+                    ...state,
+                    dataBundles: {
+                        ...state.dataBundles,
+                        averageFingersBundle: {
+                            first: state.stringData.short_fingers_first,
+                            second: state.stringData.short_fingers_second,
+                            third: state.stringData.short_fingers_third
+                        },
+                        staticOverallBundle: {
+                            first: state.stringData.earth_arm_type_first,
+                            second: state.stringData.earth_arm_type_second,
+                            third: state.stringData.earth_arm_type_third
+                        }
+                    }
+                    };
+                else return {
+                    ...state,
+                    dataBundles: {
+                        ...state.dataBundles,
+                        averageFingersBundle: {
+                            first: state.stringData.short_fingers_first,
+                            second: state.stringData.short_fingers_second,
+                            third: state.stringData.short_fingers_third
+                        },
+                        staticOverallBundle: {
+                            first: state.stringData.fire_arm_type_first,
+                            second: state.stringData.fire_arm_type_second,
+                            third: state.stringData.fire_arm_type_third
+                        }
+                    }
+                }
+            }
+            else if (action.form === 'square') return {
+                ...state,
+                dataBundles: {
+                    ...state.dataBundles,
+                    averageFingersBundle: {
+                        first: state.stringData.middle_description_first,
+                        second: state.stringData.middle_description_second,
+                        third: ""
+                    },
+                    staticOverallBundle: {
+                        first: state.stringData.wind_arm_first,
+                        second: state.stringData.wind_arm_second,
+                        third: state.stringData.wind_arm_third
+                    }
+                }
+            };
+            else return {
+                    ...state,
+                    dataBundles: {
+                        ...state.dataBundles,
+                        averageFingersBundle: {
+                            first: state.stringData.middle_description_first,
+                            second: state.stringData.middle_description_second,
+                            third: ""
+                        },
+                        staticOverallBundle: {
+                            first: state.stringData.water_arm_type_first,
+                            second: state.stringData.water_arm_type_second,
+                            third: state.stringData.water_arm_type_third
+                        }
+                    }
+            }
+        }
         default: {
             return state
         }
@@ -584,6 +669,8 @@ export const setFingerLength = (length) => ({type: SET_FINGER_LENGTH, length});
 export const setPalmLength = (length) => ({type: SET_PALM_LENGTH, length});
 export const activateFinger = () => ({type: ACTIVATE_FINGER});
 export const activatePalm = () => ({type: ACTIVATE_PALM});
+export const calculateHandType = (form, length) => ({type: CALCULATE_HAND_TYPE, form, length});
+export const setPalmShape = (palmShape) => ({type: SET_PALM_SHAPE, palmShape});
 
 export const fetchData = () => {
     return async (dispatch) => {

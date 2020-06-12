@@ -23,7 +23,7 @@ function App() {
         <BrowserRouter>
             <div className={style.appContainer}>
                 <Route exact path={'/success'} render={() => <Container/>}/>
-                <Route path={'/'} render={() => <MainPage/>}/>
+                <Route exact path={'/'} render={() => <MainPage/>}/>
                 <Route exact path={'/init'} render={() => <BirthDatePicker/>}/>
                 <Route exact path={'/payment'} render={() => <Payment/>}/>
                 <Route exact path={'/hyromancer'} render={() => <Hyromancer/>}/>

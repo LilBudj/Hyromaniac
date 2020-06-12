@@ -16,13 +16,14 @@
     font-family: Marcellus, 'serif';
     width: 60%;
     height: 300px;
-    z-index: 200000;
+    border-radius: 15px;
 }
 .toggler{
-    z-index: 22;
+    font-size: 20px;
+    color: #7705a8;
 }
 .value{
-    z-index: 22;
+    font-size: 20px;
 }
 
 input[type=range] {
@@ -35,7 +36,7 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 16px;
+    height: 6px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #dddddd;;
@@ -58,7 +59,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 input[type=range]::-moz-range-track {
     outline: none;
     width: 100%;
-    height: 16px;
+    height: 6px;
     cursor: pointer;
     background: #dddddd;;
     border-radius: 1.3px;
@@ -107,4 +108,9 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
     background: #dddddd;
+}
+
+.toggler:hover{
+    transition: 0.4s;
+    color: #cc22cc;
 }

@@ -19,10 +19,17 @@
 .themeHeader{
     display: -webkit-flex;
     display: -moz-flex;
+    flex-direction: column;
     display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-evenly;
-    margin-top: 10vh;
+    align-items: center;
+}
+
+.headMessage{
+    color: white;
+    width: 60%;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-size: 36px;
 }
 
 .hyromancer{
@@ -37,20 +44,20 @@
     display: -moz-flex;
     display: flex;
     -webkit-align-items: center;
+    justify-content: center;
     align-items: center;
-    width: 500px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
-    margin-left: 25px;
+    font-weight: 600;
+    font-family: Merriweather, 'serif';
+    margin-top: 2vh;
 }
 
 .mainContent{
     display: -webkit-flex;
     display: -moz-flex;
     display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-evenly;
-    width: 80%;
+    justify-content: space-between;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
@@ -69,19 +76,39 @@
     -webkit-align-items: center;
     align-items: center;
     border-radius: 10px;
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 40vw
+}
+.lastWarning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
 }
 
 .warnImage{
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    min-height: 160px;
+}
+.warnImageTodo{
+    width: 140px;
+    height: 160px;
+}
+.warnImageHand{
     width: 100px;
     height: 100px;
+    min-width: 100px;
+    min-height: 100px;
 }
 
 .warnMessage{
-    width: 300px;
+    width: 70%;
+    margin: 5%;
     color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Merriweather, 'serif';
 }
 .unique{
     outline: none;
@@ -132,7 +159,7 @@
     transform: scale(0.6, 0.6);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 720px){
     .content{
         display: -webkit-flex;
         display: -moz-flex;
@@ -148,10 +175,14 @@
         flex-direction: column;
         -webkit-align-items: center;
         align-items: center;
-        height: 280px;
     }
     .hyromancer{
         transform: scale(0.7, 0.7);
+    }
+    .headMessage{
+        font-size: 18px;
+        width:100%;
+        margin-bottom: 0;
     }
     .message{
         width: 80vw;
@@ -167,7 +198,14 @@
         font-size: 12px;
     }
     .warnImage{
-        transform: scale(1.2, 1);
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    .warnImageTodo{
+        height: 80px;
+        width: calc((80px/8)*7);
     }
     .datePicker{
         display: -webkit-flex;
@@ -183,5 +221,28 @@
         height: calc(0.6 * 140px);
         background-size: 100%;
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 720px){
+    .headMessage{
+        font-size: 26px;
+    }
+    .warning{
+        width: 35vw;
+    }
+    .warnMessage{
+        width: 80%;
+        font-size: 14px;
+    }
+    .warnImage{
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    .warnImageTodo{
+        height: 80px;
+        width: calc((80px/8)*7);
     }
 }

@@ -5,13 +5,14 @@ import squareHand from "../../assets/img7.png";
 import longHand from "../../assets/img8.png";
 import Slider from "../utils/slider/Slider";
 import {connect} from "react-redux";
-import {activateFinger, activatePalm, setFingerLength, setPalmLength} from "../../redux/palmReducer";
+import {activateFinger, activatePalm, calculateHandType, setFingerLength, setPalmLength} from "../../redux/palmReducer";
 
 const HandLength = (props) => {
 
     return(
         <>
         {props.isFingerActive && <Slider min={'30'} max={'120'} range={'1'} value={props.fingerLength} toggler={props.activateFinger} onChange={(e) => props.setFingerLength(e.currentTarget.value)}/>}
+        {props.isPalmActive && <Slider min={'30'} max={'120'} range={'1'} value={props.palmLength} toggler={props.activatePalm} onChange={(e) => props.setPalmLength(e.currentTarget.value)}/>}
         <div>
             <div style={{height: '100vh'}} className={style.content}>
 
@@ -32,7 +33,7 @@ const HandLength = (props) => {
                         {Buffer.from(props.data.how_long_determine_second, 'base64').toString()}
                     </div>
                 </div>
-                <NavLink className={style.link} to={'/palmistry/length/average'}><button className={style.button}>Продолжить</button></NavLink>
+                <NavLink className={style.link} to={'/palmistry/length/average'}><button className={style.button} onClick={() => props.calculateHandType(props.palmShape, props.fingerLength)}>Продолжить</button></NavLink>
             </div>
         </div>
             </>
@@ -43,12 +44,14 @@ let mapStateToProps = (state) => ({
     isFingerActive: state.palmReducer.sliderActivations.isFingerActive,
     isPalmActive: state.palmReducer.sliderActivations.isPalmActive,
     fingerLength: state.palmReducer.palmMeasures.fingerLength,
-    palmLength: state.palmReducer.palmMeasures.palmLength
+    palmLength: state.palmReducer.palmMeasures.palmLength,
+    palmShape: state.palmReducer.palmMeasures.palmShape
 });
 
 export default connect(mapStateToProps, {
     activateFinger,
     activatePalm,
     setFingerLength,
-    setPalmLength
+    setPalmLength,
+    calculateHandType
 })(HandLength)

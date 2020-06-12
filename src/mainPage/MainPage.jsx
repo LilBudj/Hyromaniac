@@ -24,9 +24,13 @@ import {activateFinger, activatePalm, setFingerLength, setPalmLength} from "../r
 import Slider from "../components/utils/slider/Slider";
 import CompatibilityContainer from "../components/compatibility/CompatibilityContainer";
 
-const MainPage = (props) => {
+const MainPage = () => {
     return(
-        <div className={style.container} id={'main-page-container'}>
+        <div className={"d-flex flex-column align-items-center"} id={'main-page-container'} style={{
+            width: '80vw',
+            backgroundColor: '#ffffff',
+            fontFamily: `Marcellus`,
+        }}>
             <div className={style.background}>
                 <Header/>
                 <div className={style.signs}>
@@ -37,7 +41,6 @@ const MainPage = (props) => {
                     Get your future
                 </button>
             </div>
-            {props.isPalmActive && <Slider min={'30'} max={'120'} range={'1'} value={props.palmLength} toggler={props.activatePalm} onChange={(e) => props.setFingerLength(e.currentTarget.value)}/>}
             <div className={style.content}>
                 <Route exact path={'/sagittarius'} render={() => <ForecastContainer zodiac={'Sagittarius'}/>}/>
                 <Route exact path={'/scorpio'} render={() => <ForecastContainer zodiac={'Scorpio'}/>}/>
@@ -59,16 +62,4 @@ const MainPage = (props) => {
     )
 };
 
-let mapStateToProps = (state) => ({
-    isFingerActive: state.palmReducer.sliderActivations.isFingerActive,
-    isPalmActive: state.palmReducer.sliderActivations.isPalmActive,
-    fingerLength: state.palmReducer.palmMeasures.fingerLength,
-    palmLength: state.palmReducer.palmMeasures.palmLength
-});
-
-export default connect(mapStateToProps, {
-    activateFinger,
-    activatePalm,
-    setFingerLength,
-    setPalmLength
-})(MainPage)
+export default MainPage

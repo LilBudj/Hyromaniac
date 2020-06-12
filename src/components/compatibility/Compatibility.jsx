@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import style from "./Compatibility.module.css"
 import aquarius from "../../assets/outline_stroke_aquarius.png";
 import aries from "../../assets/outline_stroke_aries.png";
@@ -13,6 +13,7 @@ import scorpio from "../../assets/outline_stroke_scorpio.png";
 import taurus from "../../assets/outline_stroke_taurus.png";
 import virgo from "../../assets/outline_stroke_virgo.png";
 import preloader from "../../assets/Preloader.gif";
+import Modal from "./Modal";
 
 let zodiacSorter = (zodiac) => {
     switch (zodiac) {
@@ -60,7 +61,6 @@ let zodiacSorter = (zodiac) => {
 };
 
 const Compatibility = (props) => {
-
     let zodiacFirst = zodiacSorter(props.zodiacFirst);
     let zodiacSecond = zodiacSorter(props.zodiacSecond);
 
@@ -69,11 +69,12 @@ const Compatibility = (props) => {
       {props.isLoading ? <img style={{transform: 'scale(1.2, 1.2)'}} src={preloader} alt={'loader'}/>
               :
               <div className={style.container}>
+                  {props.isModal && <Modal/>}
                   <div className={style.pageName}>Cовместимость</div>
                   <div className={style.images}>
                       <img src={zodiacFirst} className={style.image} alt={'zodiac'}/>
-                      <div className={style.percent}>{props.percent}</div>
-                      <img src={zodiacSecond} className={style.image} alt={'zodiac'}/>
+                      <div className={style.percent}>{props.percent} %</div>
+                      <img src={zodiacSecond} className={style.image} alt={'zodiac'} onClick={props.setModal}/>
                   </div>
                   <div className={style.unionName}>{props.name}</div>
                   <div className={style.body}>{props.body}</div>

@@ -9,44 +9,51 @@ import palm from "../../assets/рука.png";
 
 const Hyromancer = () => {
     return(
-        <div className={"d-flex flex-column justify-content-around align-items-center align-self-center w-80 h-160"}>
+        <div style={{backgroundImage: 'http://gadanye-online.ru/wp-content/uploads/2019/02/hero_arm_left.png',
+            backgroundColor: '#252633', height: '140vh', padding: '3%'}}
+             className={"d-flex flex-column justify-content-around align-items-center align-self-center w-100"}>
             <Fade left>
+                <div className={style.headMessage}>
+                    Добро пожаловать в гид по линиям ваших ладоней
+                </div>
             <div className={style.themeHeader}>
                 <img src={chiromancer} className={style.hyromancer}>
                 </img>
                 <div className={style.message}>
-                    Хиромант приветствует вас и готов приоткрыть тайну ваших рук
+                    Начнем?
                 </div>
             </div>
             <div className={style.mainContent}>
                 <div className={style.warning}>
-                    <img src={toDo} className={style.warnImage}>
+                    <img src={toDo} className={style.warnImageTodo} alt={'todo'}>
 
                     </img>
                     <div className={style.warnMessage}>
                         Сеанс чтения ладони состоит из нескольких этапов, которые
-                        вы должны проходить один зп другим, а не пропускать их
+                        вы должны проходить один за другим, а не пропускать их.
                     </div>
                 </div>
                 <div className={style.warning}>
                     <div className={style.warnMessage}>
-                        Обратите особое внимание на освещение
+                        Обратите особое внимание на освещение,
+                        в комнате должно быть достаточно светло, идеально подойдет солнечный свет.
                     </div>
                     <img src={sun} className={style.warnImage} alt={'sun'}/>
                 </div>
-                <div className={style.warning}>
-                    <img src={palm} className={style.warnImage}>
+                <div className={style.lastWarning}>
+                    <img src={palm} className={style.warnImageHand}>
 
                     </img>
-                    <div className={style.warnMessage}>
+                    <div style={{width: '80%'}} className={style.warnMessage}>
                         Какие бы результаты вы ни получили, следует помнить, что только
                         вы сами являетесь хозяином своей судьбы, а ваши ладони только отображают
-                        избранные вами варианты
+                        избранные вами варианты. Если линии на вашей ладони предрекают вам неудачу,
+                        подумайте об изменении своего отношения к жизни, и вы увидите как образ на вашей ладони начнет менятся.
                     </div>
                 </div>
             </div>
                 <div>
-                <NavLink to={'/payment'}><button className={style.unique}>Начать Сеанс</button></NavLink>
+                <NavLink to={'/'}><button className={style.unique}>Начать Сеанс</button></NavLink>
                 </div>
             </Fade>
         </div>
