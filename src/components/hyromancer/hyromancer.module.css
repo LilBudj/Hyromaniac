@@ -30,13 +30,13 @@
     margin-bottom: 10vh;
     text-align: center;
     font-size: 36px;
+    font-weight: 900;
 }
 
 .hyromancer{
-    width: 160px;
-    height: 160px;
-    border-radius: 80px;
-    box-shadow: 0 0 18px #ccf;
+    width: 190px;
+    height: 190px;
+    border-radius: 95px;
 }
 
 .message{
@@ -50,16 +50,17 @@
     color: white;
     font-weight: 600;
     font-family: Merriweather, 'serif';
-    margin-top: 2vh;
+    margin-top: 6vh;
 }
 
 .mainContent{
     display: -webkit-flex;
     display: -moz-flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+
 }
 
 .headLine{
@@ -76,7 +77,7 @@
     -webkit-align-items: center;
     align-items: center;
     border-radius: 10px;
-    width: 40vw
+    width: 35vw
 }
 .lastWarning{
     display: flex;
@@ -86,14 +87,14 @@
 }
 
 .warnImage{
-    width: 160px;
-    height: 160px;
-    min-width: 160px;
-    min-height: 160px;
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+    min-height: 140px;
 }
 .warnImageTodo{
-    width: 140px;
-    height: 160px;
+    width: calc((130px/8)*7);
+    height: 130px;
 }
 .warnImageHand{
     width: 100px;
@@ -114,7 +115,6 @@
     outline: none;
     border: none;
     background-color: transparent;
-    background-image: url("../../assets/кнопка.png");
     text-transform: uppercase;
     width: 140px;
     height: 140px;
@@ -188,6 +188,7 @@
         width: 80vw;
         font-size: 14px;
         line-height: 1.1em;
+        margin-top: 2vh;
     }
     .warning{
         margin-top: 10px;
@@ -198,14 +199,14 @@
         font-size: 12px;
     }
     .warnImage{
-        width: 100px;
-        height: 100px;
-        min-width: 100px;
-        min-height: 100px;
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
     }
     .warnImageTodo{
-        height: 80px;
-        width: calc((80px/8)*7);
+        height: 100px;
+        width: calc((100px/8)*7);
     }
     .datePicker{
         display: -webkit-flex;
@@ -236,13 +237,13 @@
         font-size: 14px;
     }
     .warnImage{
-        width: 100px;
-        height: 100px;
-        min-width: 100px;
-        min-height: 100px;
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
     }
     .warnImageTodo{
-        height: 80px;
-        width: calc((80px/8)*7);
+        height: 100px;
+        width: calc((100px/8)*7);
     }
 }

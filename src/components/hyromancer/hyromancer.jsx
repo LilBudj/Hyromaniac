@@ -6,11 +6,12 @@ import chiromancer from "../../assets/chyromancer.png";
 import toDo from "../../assets/todoImg.png";
 import sun from "../../assets/солнышко.png";
 import palm from "../../assets/рука.png";
+import button from "../../assets/кнопка.png";
 
 const Hyromancer = () => {
     return(
         <div style={{backgroundImage: 'http://gadanye-online.ru/wp-content/uploads/2019/02/hero_arm_left.png',
-            backgroundColor: '#252633', height: '140vh', padding: '3%'}}
+            backgroundColor: '#252633', height: '160vh', padding: '10%'}}
              className={"d-flex flex-column justify-content-around align-items-center align-self-center w-100"}>
             <Fade left>
                 <div className={style.headMessage}>
@@ -41,7 +42,7 @@ const Hyromancer = () => {
                     <img src={sun} className={style.warnImage} alt={'sun'}/>
                 </div>
                 <div className={style.lastWarning}>
-                    <img src={palm} className={style.warnImageHand}>
+                    <img src={palm} className={style.warnImage}>
 
                     </img>
                     <div style={{width: '80%'}} className={style.warnMessage}>
@@ -53,7 +54,7 @@ const Hyromancer = () => {
                 </div>
             </div>
                 <div>
-                <NavLink to={'/'}><button className={style.unique}>Начать Сеанс</button></NavLink>
+                <NavLink to={'/'}><img src={button} className={style.unique} alt={'button'}/></NavLink>
                 </div>
             </Fade>
         </div>

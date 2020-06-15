@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/compatibility/Compatibility.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/compatibility/CompatibilityContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/CompatibilityContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/compatibility/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/HandLength.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/HandShape.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/HandShape.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/slider/Slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/slider/Slider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/palmReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/palmReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +106,8 @@
       <workItem from="1591253611936" duration="27628000" />
       <workItem from="1591469391869" duration="32340000" />
       <workItem from="1591783335736" duration="29639000" />
-      <workItem from="1591944585480" duration="5943000" />
+      <workItem from="1591944585480" duration="12459000" />
+      <workItem from="1592201844881" duration="3737000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -310,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591733497689</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="elder design">
+      <created>1591959102493</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1591959102495</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +325,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="app architecture (routing)" />
     <MESSAGE value="app architecture (styles)" />
     <MESSAGE value="hyromancer page markup" />
     <MESSAGE value="horoscope page markup" />
@@ -355,6 +349,7 @@
     <MESSAGE value="React Portal added" />
     <MESSAGE value="compatibility reducer" />
     <MESSAGE value="compatibility page" />
-    <option name="LAST_COMMIT_MESSAGE" value="compatibility page" />
+    <MESSAGE value="elder design" />
+    <option name="LAST_COMMIT_MESSAGE" value="elder design" />
   </component>
 </project>
