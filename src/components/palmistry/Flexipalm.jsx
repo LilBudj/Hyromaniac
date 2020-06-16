@@ -5,7 +5,7 @@ import {Fade} from "react-reveal";
 
 const Flexipalm = (props) => {
     return(
-        <div className={"d-flex flex-column justify-content-around align-items-center"}>
+        <div className={"d-flex flex-column justify-content-between align-items-center h-100"}>
             <Fade left>
                 <div>
                     {!!props.img ? <img src={props.img} className={style.handImg} alt={'o'}/>

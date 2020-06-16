@@ -7,14 +7,14 @@
     min-height: 100vh;
 }
 
-@media (max-height: 750px){
+@media (max-width: 750px){
     .appContainer{
-        min-height: calc(110vh + 120px);
+        /*min-height: calc(110vh + 120px);*/
     }
 }
 
-@media (max-height: 550px){
+@media (max-width: 550px){
     .appContainer{
-        min-height: calc(100vh + 200px);
+        /*min-height: calc(100vh + 200px);*/
     }
 }

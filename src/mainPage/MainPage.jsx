@@ -55,7 +55,6 @@ const MainPage = () => {
                 <Route exact path={'/virgo'} render={() => <ForecastContainer zodiac={'Virgo'}/>}/>
                 <Route exact path={'/aquarius'} render={() => <ForecastContainer zodiac={'Aquarius'}/>}/>
                 <Route exact path={'/'} render={() => <ForecastContainer zodiac={'Aries'}/>}/>
-                <Route path={'/palmistry'} render={() => <PalmistryContainer/>}/>
                 <Route path={'/compatibility'} render={() => <CompatibilityContainer/>}/>
             </div>
         </div>

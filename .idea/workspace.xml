@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Flexipalm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/InitionPalm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/InitionPalm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/Portal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/Portal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +113,8 @@
       <workItem from="1591469391869" duration="32340000" />
       <workItem from="1591783335736" duration="29639000" />
       <workItem from="1591944585480" duration="12459000" />
-      <workItem from="1592201844881" duration="3737000" />
+      <workItem from="1592201844881" duration="15725000" />
+      <workItem from="1592291371142" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -305,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591959102495</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="elder design [save]">
+      <created>1592210680236</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1592210680236</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +339,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="app architecture (styles)" />
     <MESSAGE value="hyromancer page markup" />
     <MESSAGE value="horoscope page markup" />
     <MESSAGE value="horoscope page markup [2]" />
@@ -350,6 +363,7 @@
     <MESSAGE value="compatibility reducer" />
     <MESSAGE value="compatibility page" />
     <MESSAGE value="elder design" />
-    <option name="LAST_COMMIT_MESSAGE" value="elder design" />
+    <MESSAGE value="elder design [save]" />
+    <option name="LAST_COMMIT_MESSAGE" value="elder design [save]" />
   </component>
 </project>

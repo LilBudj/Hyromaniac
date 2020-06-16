@@ -2,21 +2,23 @@ import style from "./Palmistry.module.css";
 import PalmSign from "./PalmSIgn";
 import React from "react";
 import initHand from '../../assets/arm_option_3.png'
-import thoughHand from '../../assets/arm1_option.png'
-import normalHand from '../../assets/arm_option2.png'
+import thoughHand from '../../assets/tough.png'
+import normalHand from '../../assets/average.png'
+import flexHand from '../../assets/flexible.png'
 
 const InitPalm = (props) => {
     return (
         <>
+            <div className={style.session}>
+                ГИБКОСТЬ РУКИ
+            </div>
             <div className={style.belt}>
                 <PalmSign link={'/palmistry/hard'} text={'though'} image={thoughHand}/>
                 <PalmSign link={'/palmistry/average'} text={'normal'} image={normalHand}/>
-                <PalmSign link={'/palmistry/flexible'} text={'flexible'} image={initHand}/>
+                <PalmSign link={'/palmistry/flexible'} text={'flexible'} image={flexHand}/>
             </div>
             <div className={style.content}>
-                <div className={style.session}>
-                    ГИБКОСТЬ РУКИ
-                </div>
+
                 <div className={style.underContainer}>
                 <img className={style.initHand} src={initHand} alt={'hand'}/>
                     <div className={"d-flex flex-column justify-content-between align-items-center"}>

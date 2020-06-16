@@ -49,8 +49,9 @@ import img73 from "../../assets/img73.png";
 const Palmistry = (props) => {
 
     return (
-        <div className={"d-flex flex-column align-center w-80"}>
+        <div className={"d-flex flex-column align-center w-100"} id={'palmistry-container'}>
             <Fade left>
+                <div className={style.background}>
                 {props.isLoading ? <img src={preloader} alt={'preloader'}/>
                     : <div>
                         <Route exact path={'/palmistry'} render={() => <InitPalm data={props.data}/>}/>
@@ -177,6 +178,7 @@ const Palmistry = (props) => {
                             <Flexipalm data={props.bundle.sessionEndBundle} link={'/palmistry'}/>}/>
                     </div>
                 }
+                </div>
             </Fade>
         </div>
     )

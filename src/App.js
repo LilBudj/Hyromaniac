@@ -16,6 +16,7 @@ import Payment from "./components/initiation/Payment";
 import PreHeader from "./components/header/PreHeader";
 import MainPage from "./mainPage/MainPage";
 import Palmistry from "./components/palmistry/Palmistry";
+import PalmistryContainer from "./components/palmistry/PalmistryContainer";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route exact path={'/horoscope/Today'} render={() => <Today/>}/>
                 <Route exact path={'/horoscope/Week'} render={() => <Week/>}/>
                 <Route exact path={'/horoscope/Month'} render={() => <Month/>}/>
+                <Route path={'/palmistry'} render={() => <PalmistryContainer/>}/>
             </div>
         </BrowserRouter>
     );
