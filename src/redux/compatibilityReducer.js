@@ -21,7 +21,7 @@ export const compatibilityReducer = (state = initState, action) => {
             return {
                 ...state,
                 ...action.data,
-                overallPercent: Math.sqrt((action.data.percentInLove * action.data.percentInMarried)),
+                overallPercent: Math.round(Math.sqrt((action.data.percentInLove * action.data.percentInMarried))),
                 isLoading: false,
             }
         }

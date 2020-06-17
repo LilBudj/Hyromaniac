@@ -30,6 +30,7 @@
     color: white;
     font-size: 26px;
     font-weight: 600;
+    text-align: center;
 }
 .body{
     text-align: center;
@@ -91,4 +92,25 @@
 .image:hover{
     transition: 0.4s;
     box-shadow: 0 0 10px 4px #eeeeff;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        height: 120vh;
+    }
+    .images{
+        width: 85%
+    }
+    .image{
+        width: 90px;
+        height: 90px;
+    }
+    .modalWindow{
+        width: 80vw;
+        height: 70vh;
+    }
+    .sign{
+        height: 65px;
+        width: 65px;
+    }
 }

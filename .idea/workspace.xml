@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d2915fd-6f73-4833-860e-7a7133a01c8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/compatibility/Compatibility.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hyromancer/hyromancer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/palmistry/Palmistry.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/Portal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/Portal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage/MainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/compatibilityReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +108,7 @@
       <workItem from="1591783335736" duration="29639000" />
       <workItem from="1591944585480" duration="12459000" />
       <workItem from="1592201844881" duration="15725000" />
-      <workItem from="1592291371142" duration="8654000" />
+      <workItem from="1592291371142" duration="10700000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1584027478745</created>
@@ -325,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592324094109</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="test page style fixes">
+      <created>1592391663262</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1592391663262</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +347,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="horoscope page markup" />
     <MESSAGE value="horoscope page markup [2]" />
     <MESSAGE value="horoscope page markup [3]" />
     <MESSAGE value="init page mark up" />
@@ -370,6 +371,7 @@
     <MESSAGE value="elder design" />
     <MESSAGE value="elder design [save]" />
     <MESSAGE value="style switching" />
-    <option name="LAST_COMMIT_MESSAGE" value="style switching" />
+    <MESSAGE value="test page style fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="test page style fixes" />
   </component>
 </project>
