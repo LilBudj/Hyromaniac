@@ -10,8 +10,8 @@ import button from "../../assets/кнопка.png";
 
 const Hyromancer = () => {
     return(
-        <div style={{backgroundImage: 'http://gadanye-online.ru/wp-content/uploads/2019/02/hero_arm_left.png',
-            backgroundColor: '#252633', height: '160vh', padding: '10%'}}
+        <div style={{backgroundImage: '../../assets/background.png',
+            backgroundColor: '#252633', height: '175vh', padding: '10%'}}
              className={"d-flex flex-column justify-content-around align-items-center align-self-center w-100"}>
             <Fade left>
                 <div className={style.headMessage}>
@@ -41,11 +41,12 @@ const Hyromancer = () => {
                     </div>
                     <img src={sun} className={style.warnImage} alt={'sun'}/>
                 </div>
+                <div className={style.borderLine}/>
                 <div className={style.lastWarning}>
-                    <img src={palm} className={style.warnImage}>
+                    <img src={palm} className={style.warnImageHand}>
 
                     </img>
-                    <div style={{width: '80%'}} className={style.warnMessage}>
+                    <div style={{width: '100%'}} className={style.warnMessage}>
                         Какие бы результаты вы ни получили, следует помнить, что только
                         вы сами являетесь хозяином своей судьбы, а ваши ладони только отображают
                         избранные вами варианты. Если линии на вашей ладони предрекают вам неудачу,

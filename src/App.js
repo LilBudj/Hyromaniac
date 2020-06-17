@@ -17,12 +17,13 @@ import PreHeader from "./components/header/PreHeader";
 import MainPage from "./mainPage/MainPage";
 import Palmistry from "./components/palmistry/Palmistry";
 import PalmistryContainer from "./components/palmistry/PalmistryContainer";
+import CompatibilityContainer from "./components/compatibility/CompatibilityContainer";
 
 
 function App() {
     return (
         <BrowserRouter>
-            <div className={style.appContainer}>
+            <div className={style.appContainer} id={'main-app'}>
                 <Route exact path={'/success'} render={() => <Container/>}/>
                 <Route exact path={'/'} render={() => <MainPage/>}/>
                 <Route exact path={'/init'} render={() => <BirthDatePicker/>}/>
@@ -32,6 +33,7 @@ function App() {
                 <Route exact path={'/horoscope/Week'} render={() => <Week/>}/>
                 <Route exact path={'/horoscope/Month'} render={() => <Month/>}/>
                 <Route path={'/palmistry'} render={() => <PalmistryContainer/>}/>
+                <Route exact path={'/compatibility'} render={() => <CompatibilityContainer/>}/>
             </div>
         </BrowserRouter>
     );

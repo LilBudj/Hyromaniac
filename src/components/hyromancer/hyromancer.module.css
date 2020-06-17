@@ -34,9 +34,9 @@
 }
 
 .hyromancer{
-    width: 190px;
-    height: 190px;
-    border-radius: 95px;
+    width: 270px;
+    height: 270px;
+    border-radius: 135px;
 }
 
 .message{
@@ -68,6 +68,13 @@
     text-align: center;
 }
 
+.borderLine{
+    width: 30%;
+    height: 1px;
+    background-color: silver;
+    margin: 2vh
+}
+
 .warning{
     display: -webkit-flex;
     display: -moz-flex;
@@ -97,10 +104,10 @@
     height: 130px;
 }
 .warnImageHand{
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    min-height: 100px;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
 }
 
 .warnMessage{
@@ -160,6 +167,9 @@
 }
 
 @media screen and (max-width: 720px){
+    .container{
+        height: 160vh;
+    }
     .content{
         display: -webkit-flex;
         display: -moz-flex;
@@ -186,9 +196,10 @@
     }
     .message{
         width: 80vw;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.1em;
-        margin-top: 2vh;
+        margin-top: 0;
+        margin-bottom: 3vh;
     }
     .warning{
         margin-top: 10px;
@@ -199,14 +210,20 @@
         font-size: 12px;
     }
     .warnImage{
-        width: 120px;
-        height: 120px;
-        min-width: 120px;
-        min-height: 120px;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    .warnImageHand{
+        width: 90px;
+        height: 90px;
+        min-height: 90px;
+        min-width: 90px;
     }
     .warnImageTodo{
-        height: 100px;
-        width: calc((100px/8)*7);
+        height: 90px;
+        width: calc((90px/8)*7);
     }
     .datePicker{
         display: -webkit-flex;
@@ -218,8 +235,8 @@
         align-items: center;
     }
     .unique{
-        width: calc(0.6 * 140px);
-        height: calc(0.6 * 140px);
+        width: calc(0.9 * 140px);
+        height: calc(0.9 * 140px);
         background-size: 100%;
         font-size: 14px;
     }
